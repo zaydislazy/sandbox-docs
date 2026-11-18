@@ -57,7 +57,7 @@ add_ace identifier.steam:someId queue.management allow # Name`}
       <h2 id="runtime">Runtime checks</h2>
       <p>
         In Lua, staff checks commonly go through the player object from{' '}
-        <code>exports[&apos;sandbox-base&apos;]:FetchSource(source)</code> and its Permissions helpers. TODO: verify
+        <code>exports[&apos;sandbox-base&apos;]:FetchSource(source)</code> and its Permissions helpers. Confirm
         the full Permissions method list against <code>sandbox-base</code> player modules when extending staff
         tools.
       </p>

@@ -14,7 +14,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'yarn',
@@ -29,7 +28,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'spawnmanager',
@@ -44,7 +42,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'oxmysql',
@@ -59,7 +56,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'ox_lib',
@@ -74,7 +70,6 @@ export const resources: Resource[] = [
     exports: ["getLocale"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-loadscreen',
@@ -89,7 +84,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-base',
@@ -104,7 +98,6 @@ export const resources: Resource[] = [
     exports: ["AddPlayerToRoute","CheckTokens","ClientCallback","CloneDeep","ConfigGetDiscord","ConfigGetGroupById","ConfigGetGroupPermission","ConfigGetGroupQueuePriority","ConfigGetGroups","ConfigGetServer","ConfigUpdateGroups","CreateRouteId","CreateStore","CronDelete","CronPause","CronRegister","CronResume","CronSkip","DeleteCharacterStore","DeleteEntity","DeleteObject","DeletePed","DeleteStore","DeleteVehicle","DiscordGetMember","DiscordRequest","DiscordRichPresence","DoClientCallback","DoServerCallback","DropAll","FetchAll","FetchCharacter","FetchCount","FetchPlayer","FetchPlayerData","FetchSource","FetchWebsite","GameObjectsDelete","GameObjectsGetAll","GameObjectsGetInArea","GameObjectsSpawn","GameObjectsSpawnLocal","GameObjectsSpawnLocalNoOffset","GamePlayersGetClosestPlayer","GamePlayersGetPlayerPeds","GameVehiclesDelete","GameVehiclesSpawn","GameVehiclesSpawnLocal","GeneratorAddressCity","GeneratorAddressState","GeneratorAddressStreet","GeneratorAddressStreetSecondary","GeneratorColor","GeneratorCompany","GeneratorDataFloat","GeneratorDataNumber","GeneratorDataString","GeneratorDataUUID","GeneratorDateFuture","GeneratorDatePast","GeneratorDateRecent","GeneratorDateSoon","GeneratorFinanceAccount","GeneratorFinanceCreditCard","GeneratorFinanceCryptoAddress","GeneratorHackerAbbreviation","GeneratorHackerAdjective","GeneratorHackerIngVerb","GeneratorHackerNoun","GeneratorHackerVerb","GeneratorImageAvatar","GeneratorImageImage","GeneratorInternetAvatar","GeneratorInternetDomain","GeneratorInternetEmail","GeneratorInternetIP","GeneratorInternetIPv6","GeneratorInternetMacAddress","GeneratorJob","GeneratorNameFirst","GeneratorNameLast","GeneratorNameMiddle","GeneratorPhone","GeneratorVehicleColor","GeneratorVehicleMake","GeneratorVehicleMakeModel","GeneratorVehicleModel","GeneratorVehiclePlate","GeneratorVehicleVIN","GeneratorWordAdjective","GeneratorWordAdverb","GeneratorWordNoun","GeneratorWordVerb","GetAccessRole","GetAllPlayers","GetApiAddress","GetApiId","GetApiSecret","GetCharacterData","GetDiscordApp","GetDiscordBotToken","GetEnvironment","GetLocalPlayer","GetLogging","GetMaxClients","GetPlayer","GetPlayerData","GetPlayerLicense","GetPlayerRoute","GetRecentDisconnects","GetRouteId","GetSbfwVersion","GetStore","LoggerCritical","LoggerError","LoggerInfo","LoggerTrace","LoggerWarn","MiddlewareAdd","MiddlewareTriggerEvent","MiddlewareTriggerEventWithData","MoveEntityToGlobalRoute","NetworkExplodeVehicle","PunishmentActionsBan","PunishmentActionsKick","PunishmentActionsUnban","PunishmentBanAccountID","PunishmentBanIdentifier","PunishmentBanSource","PunishmentCheckBan","PunishmentKick","PunishmentUnbanAccountID","PunishmentUnbanBanID","PunishmentUnbanIdentifier","RegexTest","RegisterClientCallback","RegisterServerCallback","RemoveRouteId","RequestRouteId","RoutePlayerToGlobalRoute","RoutePlayerToHiddenRoute","ScaleformRequest","ScaleformRequestHud","ScopesGetScope","ScopesIsPlayerInScope","ScopesTriggerScopeEvent","SequenceGet","SequenceSave","ServerCallback","SetCharacterData","SetEntityAsNoLongerNeeded","SetPedKeepTask","SetPlayerData","SetVehicleBodyHealth","SetVehicleDeformationFixed","SetVehicleDoorBroken","SetVehicleDoorOpen","SetVehicleDoorShut","SetVehicleEngineHealth","SetVehicleFixed","SetVehicleTyreBurst","SetVehicleTyreFixed","Shutdown","StreamRequestAnimDict","StreamRequestAnimSet","StreamRequestModel","TaskFollowNavMeshToCoord","TaskGoToCoordAnyMeans","TasksDelete","TasksPause","TasksRegister","TasksResume","TasksSkip","TaskWanderInArea","UtilsDoesTableHaveValue","UtilsGetTableKeys","UtilsGetTableLength","UtilsPrint","UtilsRound","UtilsWeightedRandom","WaitListCreate","WaitListInteractActive","WaitListInteractAdd","WaitListInteractInactive","WaitListInteractPop","WaitListInteractRemove","WaitListIsInQueue","WaitListPause","WaitListPrintQueue","WaitListUnpause","WebAPIGetMemberAccountID","WebAPIGetMemberIdentifier","WebAPIRequest","WebAPIValidate"],
     events: ["Callbacks:Client:ReceiveCallback","Callbacks:Client:TriggerEvent","Characters:Client:SetData","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","Core:Server:ForceAllSave","Core:Server:ForceSave","Core:Server:ForceUnload","Core:Server:ResourceStopped","Core:Server:SessionStarted","Core:Server:StartupReady","Core:Shared:Watermark","Error:Server:Report","NetSync:Client:Execute","NetSync:Server:Request","onClientResourceStart","onResourceStart","onResourceStopped","Player:Client:SetData","playerDropped","playerEnteredScope","playerLeftScope","Proxy:Shared:RegisterReady","Queue:Server:SessionActive","Routing:Client:NewRoute","Scopes:Client:PlayerEnterScope","Scopes:Client:PlayerLeftScope","txAdmin:events:scheduledRestart"],
     commands: ["rcondisablelockdown"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-queue',
@@ -119,7 +112,6 @@ export const resources: Resource[] = [
     exports: ["AddCrashPriority","AddTempPriority","Check","CheckGhosts","CloseAndDrop","GetCount","GetPosition","HandleConnection","HasCrashPriority","HasTempPriority","Pop","RemoveTempPriority","Sort"],
     events: ["Core:Server:SessionStarted","onResourceStart","playerConnecting","playerDropped","Queue:Client:SessionActive"],
     commands: ["print_connect_count","print_queue"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-pwnzor',
@@ -134,7 +126,6 @@ export const resources: Resource[] = [
     exports: ["Disconnected","Get","Screenshot","Set","TempPosIgnore","Unset"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-objects',
@@ -149,7 +140,6 @@ export const resources: Resource[] = [
     exports: ["Create","Delete","Info","PlacerCancel","PlacerEnd","PlacerStart"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-chat',
@@ -164,7 +154,6 @@ export const resources: Resource[] = [
     exports: ["ClearAll","RefreshCommands","RefreshThemes","RegisterAdminCommand","RegisterCommand","RegisterStaffCommand","SendBroadcastAll","SendDispatch","SendDispatch411","SendDispatchDOC","SendEmergency","SendEmergencyAnonymous","SendEmergencyRespond","SendNonEmergency","SendNonEmergencyAnonymous","SendNonEmergencyRespond","SendOOC","SendServerAll","SendServerSingle","SendSystemAll","SendSystemBroadcast","SendSystemSingle","SendTestResult"],
     events: ["_chat:messageEntered","Characters:Client:Logout","Characters:Client:Spawn","chat:addMessage","chat:addSuggestion","chat:addSuggestions","chat:addTemplate","chat:clearChat","Chat:Client:ReceiveMe","chat:init","chat:removeSuggestion","chat:removeSuggestions","chat:resetSuggestions","chatMessage","Job:Server:DutyAdd","Job:Server:DutyRemove","onClientResourceStart","onClientResourceStop","onResourceStart","UI:Client:Reset"],
     commands: ["me"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-commands',
@@ -179,7 +168,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-characters',
@@ -194,7 +182,6 @@ export const resources: Resource[] = [
     exports: ["DefaultSpawnCoords","FetchAllCharacters","FetchByID","FetchBySID","FetchCharacterData","FetchCharacterSource","FetchCountCharacters","FetchGetOfflineData","GetAllLocations","GetLastLocation","Logout","RepAdd","RepCreate","RepGetLevel","RepGetLevelData","RepHasLevel","RepRemove","RepView","RepViewList","SpawnInit","SpawnInitCamera","SpawnToWorld"],
     events: ["Characters:Client:Logout","Characters:Client:Logout:Event","Characters:Client:SetData","Characters:Client:Spawn","Characters:Client:Spawned","Characters:Server:DropCleanup","Characters:Server:LastLocation","Characters:Server:PlayerLoggedOut","Characters:Server:Spawn","Characters:Server:Spawning","Locations:Client:LogoutLocation","onClientResourceStart","onResourceStart","ox_inventory:ready","Player:Server:Connected","playerDropped"],
     commands: [],
-    todoVerify: false,
   },
   {
     name: 'sandbox-ped',
@@ -209,7 +196,6 @@ export const resources: Resource[] = [
     exports: ["ApplyOutfit","ApplyToPed","CreatorEnd","CreatorStart","CustomizationCancel","CustomizationHide","CustomizationSave","CustomizationShow","HatEquip","HatUnequip","MaskEquip","MaskUnequip","MaskUnequipNoItem","NecklaceEquip","NecklaceUnequip","NecklaceUnequipNoItem","PlacePedIntoWorld","Preview","Save","SpawnInit","SpawnInitCamera","SpawnToWorld","WardrobeClose","WardrobeShow"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-kbs',
@@ -224,7 +210,6 @@ export const resources: Resource[] = [
     exports: ["Add","Disable","Enable","GetKey","IsDisabled"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-admin',
@@ -239,7 +224,6 @@ export const resources: Resource[] = [
     exports: ["CopyClipboard","NoClipGetPos","NoClipIsActive","NoClipStart","NoClipStop","NoClipToggle","OpenDoorlockMenu","OpenMenu"],
     events: ["Admin:Client:AdminStopAttach","Admin:Client:Attach","Admin:Client:ChangePed","Admin:Client:CopyClipboard","Admin:Client:CopyCoords","Admin:Client:DamageTest","Admin:Client:Invisible","Admin:Client:Marker","Admin:Client:Menu:Open","Admin:Client:Menu:RecievePermissionData","Admin:Client:NoClip","Admin:Client:NoClipInfo","Admin:Client:Nuke","Admin:Client:NukeCountdown","Admin:Client:OpenAdminMenu","Admin:Client:OpenStaffMenu","Admin:Client:Recording","Admin:Client:Stall","Admin:Client:StateBagLog","Admin:Server:BanPlayer","Admin:Server:KickPlayer","Characters:Client:Logout","Characters:Client:Spawned","FreeCam:Update","Keybinds:Client:KeyDown:cancel_action","NetSync:Client:Execute","onClientResourceStart","onResourceStart","onResourceStop","ox_doorlock:setState","sandbox-admin:openDoorlockMenu","sandbox-hud:Notification","UI:Client:Reset","Vehicles:Client:Repair:Engine","Vehicles:Client:Repair:Full","Vehicles:Client:Repair:Normal","VOIP:Client:ToggleDebugMode"],
     commands: ["record","recordstop"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-ipl',
@@ -254,7 +238,6 @@ export const resources: Resource[] = [
     exports: ["EnableIpl","GetAfterHoursNightclubsObject","GetAgentsAirstrip","GetAgentsFactory","GetAgentsHangarDoor","GetAgentsOffice","GetAmmunationsObject","GetBahamaMamasObject","GetBikerClubhouse1Object","GetBikerClubhouse2Object","GetBikerCocaineObject","GetBikerCounterfeitObject","GetBikerDocumentForgeryObject","GetBikerGangObject","GetBikerMethLabObject","GetBikerWeedFarmObject","GetCargoShipObject","GetCayoPericoNightclub","GetCayoPericoSubmarine","GetChopShopCargoShipObject","GetChopShopCartelGarageObject","GetChopShopLifeguardObject","GetChopShopSalvageObject","GetCriminalEnterpriseSmeonFixObject","GetCriminalEnterpriseVehicleWarehouseObject","GetCriminalEnterpriseWarehouseObject","GetDiamondArcadeBasementObject","GetDiamondArcadeObject","GetDiamondCasinoObject","GetDiamondPenthouseObject","GetDoomsdayFacilityObject","GetDrugWarsFreakshopObject","GetDrugWarsGarageObject","GetDrugWarsLabObject","GetDrugWarsTrainCrashObject","GetExecApartment1Object","GetExecApartment2Object","GetExecApartment3Object","GetFinanceOffice1Object","GetFinanceOffice2Object","GetFinanceOffice3Object","GetFinanceOffice4Object","GetFinanceOrganizationObject","GetFloydObject","GetFranklinAuntObject","GetFranklinObject","GetGraffitisObject","GetGTAOApartmentHi1Object","GetGTAOApartmentHi2Object","GetGTAOHouseHi1Object","GetGTAOHouseHi2Object","GetGTAOHouseHi3Object","GetGTAOHouseHi4Object","GetGTAOHouseHi5Object","GetGTAOHouseHi6Object","GetGTAOHouseHi7Object","GetGTAOHouseHi8Object","GetGTAOHouseLow1Object","GetGTAOHouseMid1Object","GetGunrunningBunkerObject","GetGunrunningYachtObject","GetHeistCarrierObject","GetHeistYachtObject","GetHLApartment1Object","GetHLApartment2Object","GetHLApartment3Object","GetHLApartment4Object","GetHLApartment5Object","GetHLApartment6Object","GetImportCEOGarage1Object","GetImportCEOGarage2Object","GetImportCEOGarage3Object","GetImportCEOGarage4Object","GetImportVehicleWarehouseObject","GetLesterFactoryObject","GetMercenariesClubObject","GetMercenariesFixesObject","GetMercenariesLabObject","GetMichaelObject","GetMoneyCarwash","GetMoneyConstruction","GetMoneyOffice","GetMpSecurityBillboardsObject","GetMpSecurityGarageObject","GetMpSecurityMusicRoofTopObject","GetMpSecurityOffice1Object","GetMpSecurityOffice2Object","GetMpSecurityOffice3Object","GetMpSecurityOffice4Object","GetMpSecurityStudioObject","GetNorthYanktonObject","GetPedheadshotTexture","GetPillboxHospitalObject","GetRedCarpetObject","GetSimeonObject","GetSmugglerHangarObject","GetStripClubObject","GetSummerCarrierObject","GetSummerOfficeObject","GetTrevorsTrailerObject","GetTunerGarageObject","GetTunerMeetupObject","GetTunerMethLabObject","GetUFOObject","GetZancudoGatesObject","GVariables"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-polyzone',
@@ -269,7 +252,6 @@ export const resources: Resource[] = [
     exports: ["CreateBox","CreateCircle","CreatePoly","Get","GetAllZonesAtCoords","GetZoneAtCoords","IsCoordsInZone","Remove","TriggerZoneEvent"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-lasers',
@@ -284,7 +266,6 @@ export const resources: Resource[] = [
     exports: ["Create","GetActive","GetColor","GetLaser","GetMoving","GetVisible","SetActive","SetColor","SetMoving","SetVisible"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-hud',
@@ -299,7 +280,6 @@ export const resources: Resource[] = [
     exports: ["ActionHide","ActionHideAll","ActionShow","ApplyBuff","ApplyUniqueBuff","BuffsIconOverride","ConfirmClose","ConfirmShow","Dead","DeathTextsHide","DeathTextsRelease","DeathTextsShow","FlashbangDo","FlashbangEnd","ForceHP","GemTableClose","GemTableOpen","Hide","IDToggle","InfoOverlayClose","InfoOverlayIsOpen","InfoOverlayShow","InputClose","InputShow","InteractionBack","InteractionHide","InteractionItemsAsMenu","InteractionRegisterMenu","InteractionShow","InteractionShowMenu","IsDevModeActive","IsDisabled","IsDisabledAllowDead","ListMenuClose","ListMenuShow","MethClose","MethOpen","NOS","Notification","OverlayHide","OverlayShow","Progress","ProgressCancel","ProgressCurrentAction","ProgressFail","ProgressFinish","ProgressModifier","ProgressWithStartAndTick","ProgressWithStartEvent","ProgressWithTickEvent","RegisterBuff","RegisterStatus","RemoveBuffType","ResetStatus","ShiftLocation","Show","Toggle","UpdateBuff","UpdateVoip","VehicleHide","VehicleShow","VehicleToggle"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Characters:Client:Spawned","Characters:Client:Updated","Confirm:Client:Test","Confirm:Test:No","Confirm:Test:Yes","dev:deleteObject","dev:deleteVehicle","dev:getKeys","HUD:Client:Debug","HUD:Client:DevMode","Hud:Client:DoGiveCash","Hud:Client:GiveCash","HUD:Client:Notification","HUD:Client:NotificationClear","HUD:Client:NotificationRemove","HUD:Client:RemoveBlindfold","Input:Client:InputTest","Input:Client:Test","Keybinds:Client:KeyUp:cancel_action","ListMenu:Client:Test","Minigame:Client:DemoKeypadFail","Minigame:Client:DemoKeypadSuccess","Minigame:Client:DemoMemoryFail","Minigame:Client:DemoMemoryPerfect","Minigame:Client:DemoMemorySuccess","Minigame:Client:DemoScannerFail","Minigame:Client:DemoScannerPerfect","Minigame:Client:DemoScannerSuccess","Minigame:Client:DemoScramblerFail","Minigame:Client:DemoScramblerPerfect","Minigame:Client:DemoScramblerSuccess","Minigame:Client:DemoSequencerFail","Minigame:Client:DemoSequencerPerfect","Minigame:Client:DemoSequencerSuccess","Minigame:Client:DemoSkillbarFail","Minigame:Client:DemoSkillbarSuccess","Minigame:Client:DemoSlidersFail","Minigame:Client:DemoSlidersSuccess","Minigame:Client:Keypad","Minigame:Client:Memory","Minigame:Client:Scanner","Minigame:Client:Scrambler","Minigame:Client:Sequencer","Minigame:Client:Skillbar","Minigame:Client:Sliders","onClientResourceStart","onResourceStart","ox_inventory:ready","Particles:Client:DoFx","Particles:Client:StopFx","Particles:Server:DoFx","Progress:Client:Cancel","Progress:Client:Fail","Progress:Client:Progress","Progress:Client:ProgressWithStartAndTick","Progress:Client:ProgressWithStartEvent","Progress:Client:ProgressWithTickEvent","Status:Client:Update","Targeting:Client:CloseMenu","Targeting:Client:OpenMenu","Targeting:Client:UpdateState","UI:Client:Configure","UI:Client:Reset","Vehicles:Client:Cruise","Vehicles:Client:EnterVehicle","Vehicles:Client:ExitVehicle","Vehicles:Client:Fuel","Vehicles:Client:Ignition","Vehicles:Client:Seatbelt","VOIP:Client:Gag:Use"],
     commands: ["hud","uir"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-games',
@@ -314,7 +294,6 @@ export const resources: Resource[] = [
     exports: ["DrillingDisableControls","DrillingDraw","DrillingEnableControls","DrillingHandleControls","DrillingStart","MinigameCancel","MinigameEnd","MinigamePlayAim","MinigamePlayCaptcha","MinigamePlayDrill","MinigamePlayIcons","MinigamePlayKeymaster","MinigamePlayKeypad","MinigamePlayMemory","MinigamePlayPattern","MinigamePlayRoundSkillbar","MinigamePlayScanner","MinigamePlayScrambler","MinigamePlaySequencer","MinigamePlaySkillbar","MinigamePlaySliders","MinigamePlayTracking","ScaleformLoadAdditionalText","ScaleformLoadInteractive","ScaleformLoadMovie","ScaleformPopBool","ScaleformPopFloat","ScaleformPopInt","ScaleformPopMulti","ScaleformPopRet","ScaleformPopVoid","ScaleformRetBool","ScaleformRetInt","ScaleformSetLabels","ScaleformTrueType","ScaleformUnloadMovie"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-blips',
@@ -329,7 +308,6 @@ export const resources: Resource[] = [
     exports: ["Add","Remove","RemoveAll","SetMarker"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-sounds',
@@ -344,7 +322,6 @@ export const resources: Resource[] = [
     exports: ["FadeOne","LoopDistance","LoopLocation","LoopOne","PlayAll","PlayDistance","PlayJob","PlayLocation","PlayOne","StopDistance","StopLocation","StopOne","UISoundsPlayCoords","UISoundsPlayEntity","UISoundsPlayFrontEnd","UISoundsPlayGeneric"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-menu',
@@ -359,7 +336,6 @@ export const resources: Resource[] = [
     exports: ["Create","IsOpen"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-sync',
@@ -374,7 +350,6 @@ export const resources: Resource[] = [
     exports: ["FreezeTime","FreezeWeather","GetBlackout","GetNight","GetTime","GetTimeFrozen","GetWeather","GetWeatherFrozen","GetWinter","IsSyncing","SetBlackout","SetTime","SetTimeType","SetWeather","SetWinter","Start","Stop"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-scenes',
@@ -389,7 +364,6 @@ export const resources: Resource[] = [
     exports: ["BeginCreation","Create","Delete","Deletion","Edit"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'ox_target',
@@ -404,7 +378,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-pedinteraction',
@@ -419,7 +392,6 @@ export const resources: Resource[] = [
     exports: ["Add","GetPed","Remove","Toggle","VendorCreate","VendorRemove"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'ox_inventory',
@@ -434,7 +406,6 @@ export const resources: Resource[] = [
     exports: ["addCash","AddItem","AddSlot","AmmoAdd","BuildMetaDataTable","CanCarryAmount","CanCarryItem","CanCarryWeight","CancelProgress","CanSwapItem","CheckPlayerHasAnyItems","CheckPlayerHasItem","CheckPlayerHasItems","ClearInventory","ClearStaleIdentifier","CloseAll","closeInventory","ConfiscateInventory","ConvertItems","CountInSlot","CreateDropFromPlayer","CreateTemporaryStash","CustomDrop","Disable","displayMetadata","DumbfuckOpen","Enable","forceOpenInventory","GetAllOfTypeNoStack","getAllUtilitySlots","getBank","getCards","getCash","GetContainerFromSlot","getCurrentWeapon","GetCurrentWeapon","GetEmptySlot","GetEquippedHash","GetInventory","GetInventoryItems","GetItem","GetItemCount","GetItemSlots","GetNumberOfFreeSlots","GetPlayerItems","GetPlayerMaxWeight","GetPlayerWeight","GetSlot","GetSlotCount","GetSlotForItem","GetSlotIdsWithItem","GetSlotIdWithItem","GetSlots","GetSlotsWithItem","GetSlotWithItem","getUtilitySlotItem","GetWithStaticMetadata","giveCard","giveItemToTarget","HoldingPut","HoldingTake","InspectInventory","Inventory","IsEnabled","ItemList","Items","ItemsGetAll","ItemsGetCount","ItemsGetData","ItemsGetFirst","ItemsGetWithStaticMetadata","ItemsHas","ItemsHasAnyItems","ItemsHasItems","ItemsHasType","Keyboard","LootCustomSet","LootCustomSetWithCount","LootCustomWeightedSet","LootCustomWeightedSetWithCount","LootCustomWeightedSetWithCountAndModifier","LootGem","LootGemRandom","LootItemClass","LootOre","notify","OldGetSlot","openInventory","openNearbyInventory","OpenSecondary","Progress","ProgressActive","registerHook","RegisterShop","RegisterStash","RegisterUse","Remove","RemoveAll","removeCash","removeHooks","RemoveId","RemoveInventory","RemoveItem","RemoveList","RemoveSlot","ReturnInventory","Rob","Search","SearchCharacter","setContainerProperties","SetDurability","SetInventorySource","SetItem","SetItemCreateDate","SetMaxWeight","SetMetadata","SetMetaDataKey","setPlayerInventory","SetSlotCount","setStashTarget","suppressItemNotifications","SwapSlots","Toggle","UnequipIfEquipped","UnequipIfEquippedNoAnim","UpdateMetaData","UpdateVehicle","useItem","useSlot","weaponWheel"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'ox_inv_addons',
@@ -449,7 +420,6 @@ export const resources: Resource[] = [
     exports: ["addRecipe"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-status',
@@ -464,7 +434,6 @@ export const resources: Resource[] = [
     exports: ["Add","Check","GetAll","GetRegistered","GetSingle","Register","Remove","Reset","Set","SetAll","SetSingle","Toggle"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-damage',
@@ -479,7 +448,6 @@ export const resources: Resource[] = [
     exports: ["ApplyStandardDamage","CalculateMaxHp","Died","EffectsAdrenaline","EffectsPainkiller","GetLimbDamage","HospitalCheckIn","HospitalFindBed","HospitalICUGetItems","HospitalICURelease","HospitalICUSend","HospitalLeaveBed","HospitalOccupyBed","HospitalRequestBed","HospitalSendToBed","ReductionsIncrease","ReductionsReset","ResetLimbDamage","Revive","WasDead"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-escort',
@@ -494,7 +462,6 @@ export const resources: Resource[] = [
     exports: ["DoEscort","EscortDo","EscortDoPutIn","EscortStop","StopEscort","TrunkEnter","TrunkExit","TrunkGetIn","TrunkGetOut","TrunkToggleTrunk"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-animations',
@@ -509,7 +476,6 @@ export const resources: Resource[] = [
     exports: ["EmoteBindsUpdate","EmoteBindsUse","EmotesCancel","EmotesForceCancel","EmotesGet","EmotesPlay","EmotesWakeUp","OpenExpressionsMenu","OpenMainEmoteMenu","OpenWalksMenu","PedFeaturesRequestFeaturesUpdate","PedFeaturesSetExpression","PedFeaturesSetWalk","PedFeaturesToggleCrouch","PedFeaturesUpdateFeatureInfo"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-visuals',
@@ -524,7 +490,6 @@ export const resources: Resource[] = [
     exports: ["VisualsToggle"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-weapons',
@@ -539,7 +504,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-businesses',
@@ -554,7 +518,6 @@ export const resources: Resource[] = [
     exports: ["StorageUnitsAccess","StorageUnitsCreate","StorageUnitsDelete","StorageUnitsGet","StorageUnitsGetAll","StorageUnitsGetAllManagedBy","StorageUnitsGetNearUnit","StorageUnitsManage","StorageUnitsManageAll","StorageUnitsSell","StorageUnitsUpdate"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-vacation',
@@ -569,7 +532,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-finance',
@@ -584,7 +546,6 @@ export const resources: Resource[] = [
     exports: ["AccountsAddPersonalSavingsJointOwner","AccountsCreatePersonal","AccountsCreatePersonalSavings","AccountsGet","AccountsGetOrganization","AccountsGetPersonal","AccountsRemovePersonalSavingsJointOwner","BalanceCharge","BalanceDeposit","BalanceGet","BalanceHas","BalanceWithdraw","BillingAccept","BillingCharge","BillingCreate","BillingDismiss","BillingFine","BillingPlayerCreateOrganizationBill","CryptoCoinCreate","CryptoCoinGet","CryptoCoinGetAll","CryptoExchangeAdd","CryptoExchangeBuy","CryptoExchangeIsListed","CryptoExchangeRemove","CryptoExchangeSell","CryptoExchangeTransfer","CryptoHas","LoansCreatePropertyLoan","LoansCreateVehicleLoan","LoansCreditDecrease","LoansCreditGet","LoansCreditIncrease","LoansCreditSet","LoansGetAllowedLoanAmount","LoansGetDefaultInterestRate","LoansGetPlayerLoans","LoansHasBeenDefaulted","LoansHasRemainingPayments","LoansMakePayment","TransactionLogsAdd","WalletGet","WalletHas","WalletModify"],
     events: ["Banking:Client:StartOpenATM","Characters:Client:Spawn","Characters:Client:Updated","Finance:Client:HandOffCash","Finance:Client:OpenUI","Finance:Client:Paycheck","Finance:Server:Startup","Jobs:Server:CompleteStartup","Keybinds:Client:KeyUp:primary_action","onClientResourceStart","onResourceStart","ox_inventory:ready","Polyzone:Enter","Polyzone:Exit","UI:Client:Reset","Wallet:ShowCash"],
     commands: ["cash","fine","givecash","testloans"],
-    todoVerify: false,
   },
   {
     name: 'ox_doorlock',
@@ -599,7 +560,6 @@ export const resources: Resource[] = [
     exports: ["editDoor","getAllDoors","getClosestDoor","getClosestDoorId","getDoor","getDoorFromName","getDoorIdFromEntity","getKeyfobRange","IsLocked","pickClosestDoor","setDoorState","SetLock","SetUnlock","useClosestDoor","useKeyfob"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-elevators',
@@ -614,7 +574,6 @@ export const resources: Resource[] = [
     exports: ["SetElevatorLock"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-laptop',
@@ -629,7 +588,6 @@ export const resources: Resource[] = [
     exports: ["AddData","AddNotification","AddNotificationWithId","AttemptChop","BizWizDocumentsCreate","BizWizDocumentsDelete","BizWizDocumentsSearch","BizWizDocumentsUpdate","BizWizDocumentsView","BizWizNoticesCreate","BizWizNoticesDelete","BizWizReceiptsCreate","BizWizReceiptsDelete","BizWizReceiptsDeleteAll","BizWizReceiptsSearch","BizWizReceiptsUpdate","BizWizReceiptsView","ChoppingCreateBlips","Close","HasPermission","IsAppUsable","IsOpen","LoadPermissions","LSUndergroundBoostingCancel","LSUndergroundBoostingComplete","LSUndergroundBoostingGiveContract","LSUndergroundBoostingRewardContract","LSUndergroundBoostingStart","LSUndergroundChoppingCreatePickupBox","LSUndergroundChoppingFindList","LSUndergroundChoppingGenerateList","LSUndergroundChoppingInProgress","LSUndergroundChoppingIsOnList","LSUndergroundChoppingRemoveFromList","Open","RemoveData","RemoveNotification","RemoveNotificationById","ResetData","ResetNotifications","ResetRoute","SetData","TeamsCreate","TeamsDelete","TeamsGet","TeamsGetAll","TeamsGetByMember","TeamsGetByMemberSource","TeamsMembersAdd","TeamsMembersNotification","TeamsMembersNotificationAddWithId","TeamsMembersNotificationRemoveById","TeamsMembersNotificationUpdate","TeamsMembersRemove","TeamsMembersSendEvent","TeamsRequestsAdd","TeamsRequestsClear","TeamsRequestsGet","TeamsResetState","TeamsSetState","UpdateData","UpdateJobData","UpdateNotification"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-killzones',
@@ -644,7 +602,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-apartments',
@@ -659,7 +616,6 @@ export const resources: Resource[] = [
     exports: ["ClientEnter","Enter","Exit","ExtrasLogout","ExtrasStash","ExtrasWardrobe","GetInteriorLocation","GetNearApartment","RequestsCreate","RequestsGet"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-properties',
@@ -674,7 +630,6 @@ export const resources: Resource[] = [
     exports: ["Add","AddBackdoor","AddFrontdoor","AddGarage","Buy","ClientEnter","Closet","Delete","EditMode","Enter","ForceEveryoneLeave","Foreclose","Get","GetCurrent","GetInside","GetMaxParkingSpaces","GetNearHouse","GetNearHouseBackdoor","GetNearHouseGarage","GetProperties","GetPropertiesWithAccess","GetUpgradesConfig","GiveKey","HasAccessWithData","HasKey","HasKeyBySID","IsNearProperty","Logout","Move","Place","Preview","Sell","SetData","SetLabel","SetLock","SetPrice","Stash","TakeKey","ToggleLock","UpgradeDecrease","UpgradeGet","UpgradeIncrease","UpgradeSet","UpgradeSetInterior"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-weed',
@@ -689,7 +644,6 @@ export const resources: Resource[] = [
     exports: ["PlantingCreate","PlantingDelete","PlantingSet"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-drugs',
@@ -704,7 +658,6 @@ export const resources: Resource[] = [
     exports: ["AddictionAdd","AddictionRemove","AddictionReset","ClearPlacementData","GetPlacementData","MethCreatePlacedTable","MethFinishTableCook","MethGenerateTable","MethGetTable","MethIsTablePlaced","MethRemovePlacedTable","MethStartTableCook","MoonshineBarrelCreateDatabase","MoonshineBarrelCreatePlaced","MoonshineBarrelGenerate","MoonshineBarrelIsPlaced","MoonshineBarrelRemovePlaced","MoonshineStillCreatePlaced","MoonshineStillFinishCook","MoonshineStillGenerate","MoonshineStillGet","MoonshineStillIsPlaced","MoonshineStillRemovePlaced","MoonshineStillStartCook","StorePlacementData"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-robbery',
@@ -719,7 +672,6 @@ export const resources: Resource[] = [
     exports: ["GetAccessCodes","StateSet","StateUpdate","TriggerPDAlert"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-jail',
@@ -734,7 +686,6 @@ export const resources: Resource[] = [
     exports: ["GetPrisoners","IsJailed","IsReleaseEligible","Reduce","Release","Sentence"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-evidence',
@@ -749,7 +700,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-vehicles',
@@ -764,7 +714,6 @@ export const resources: Resource[] = [
     exports: ["CanBeStored","ClassGet","Delete","DonatorPlatesAdd","DonatorPlatesCheck","DonatorPlatesRemove","EngineCheckKeys","EngineForce","EngineOff","EngineOn","EngineToggle","GaragesGet","GaragesGetAll","GaragesImpound","Hack","HackExterior","HasAccess","IsClass","IsClassOrHigher","KeysAdd","KeysAddBySID","KeysHas","KeysRemove","Lockpick","LockpickExterior","OwnedAdd","OwnedAddToCharacter","OwnedAddToFleet","OwnedDelete","OwnedForceSave","OwnedGetActive","OwnedGetAll","OwnedGetAllActive","OwnedGetVIN","OwnedPropertiesGet","OwnedPropertiesGetCount","OwnedPropertiesStore","OwnedSeize","OwnedSpawn","OwnedStore","OwnedTrack","PlateGenerate","PropertiesGet","PropertiesSet","RandomModelAClass","RandomModelBClass","RandomModelCClass","RandomModelDClass","RandomModelSClass","RandomModelXClass","RandomName","RandomNameByMake","RepairEngine","RepairFull","RepairKit","RepairNeedsKit","RepairNormal","RepairPart","SetLocks","SlimJim","SpawnTemp","StopDespawn","StoresCreate","StoresDelete","SyncBikeDrop","SyncBikePickup","SyncDoorsOpen","SyncDoorsShut","SyncEmergencyAirhornGet","SyncEmergencyAirhornSet","SyncEmergencyLightsGet","SyncEmergencyLightsToggle","SyncEmergencySirenCycle","SyncEmergencySirenGet","SyncEmergencySirenToggle","SyncIndicatorsGet","SyncIndicatorsSet","SyncNeonsHas","SyncNeonsIsDisabled","SyncNeonsToggle","toggleDoubleClutchBlock","UtilsIsCloseToFrontOfVehicle","UtilsIsCloseToRearOfVehicle","UtilsIsCloseToVehicle","VINGenerateLocal","VINGenerateOwned"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Core:Server:ForceSave","EmergencyAlerts:Server:DoPredefined","EmergencyAlerts:Server:PursuitModeChange","entityCreating","entityRemoved","explosionEvent","Fitment:Client:Update","gameEventTriggered","Input:Closed","Keybinds:Client:KeyUp:primary_action","ListMenu:Close","onClientResourceStart","onResourceStart","ox_inventory:ready","Polyzone:Enter","Polyzone:Exit","Radar:Server:StolenVehicle","Vehicle:Client:ForceAudio","Vehicle:Client:PickupBike","Vehicle:Server:InspectVIN","Vehicles:Client:Actions:SwitchSeat","Vehicles:Client:Actions:ToggleDoor","Vehicles:Client:Actions:ToggleWindow","Vehicles:Client:AnchorBoat","Vehicles:Client:AttemptSlimJim","Vehicles:Client:BecameDriver","Vehicles:Client:CharacterLogin","Vehicles:Client:CharacterLogout","Vehicles:Client:CleaningKit","Vehicles:Client:DonatorLicensePlateClaim","Vehicles:Client:DonatorLicensePlateClaimConfirm","Vehicles:Client:EnterVehicle","Vehicles:Client:ExitVehicle","Vehicles:Client:FlipVehicle","Vehicles:Client:FlipVehicleRequest","Vehicles:Client:ForceUpdateVehicleDamageState","Vehicles:Client:ForceUpdateVehicleDegenState","Vehicles:Client:GiveKeys","Vehicles:Client:Impound","Vehicles:Client:InspectVIN","Vehicles:Client:K9GetInNearestSeat","Vehicles:Client:K9LeaveVehicle","Vehicles:Client:RecieveCarBombConfig","Vehicles:Client:RecievePersonalPlateInput","Vehicles:Client:RemoveFakePlate","Vehicles:Client:RemoveHarness","Vehicles:Client:RemoveNitrous","Vehicles:Client:Repair:Engine","Vehicles:Client:Repair:Full","Vehicles:Client:Repair:Normal","Vehicles:Client:RequestImpound","Vehicles:Client:RequestTow","Vehicles:Client:SetDespawnStuff","Vehicles:Client:Speeding","Vehicles:Client:StartAnchor","Vehicles:Client:StartUp","Vehicles:Client:Storage:GoBack","Vehicles:Client:Storage:Retrieve","Vehicles:Client:Storage:Select","Vehicles:Client:StoreVehicle","Vehicles:Client:SwitchVehicleSeat","Vehicles:Client:SyncNitroEffect","Vehicles:Client:SyncPurgeEffect","Vehicles:Client:ToggleAnchor","Vehicles:Client:ToggleLocks","Vehicles:Client:Tow","Vehicles:Client:TowReleaseMenu","Vehicles:Client:TowRequestRelease","Vehicles:Client:UpdateKeys","Vehicles:Client:ViewVIN","Vehicles:Server:AddDonatorPlates","Vehicles:Server:DeleteEmergencyBoat","Vehicles:Server:FlipVehicle","Vehicles:Server:GenerateVehicleInfo","Vehicles:Server:HarnessDamage","Vehicles:Server:NitrousUsage","Vehicles:Server:PlayerSetProperties","Vehicles:Server:RemoveBomb","Vehicles:Server:RequestEmergencyBoat","Vehicles:Server:RequestGenerateVehicleInfo","Vehicles:Server:StopDespawn","Vehicles:Server:SyncNitroEffect","Vehicles:Server:SyncPurgeEffect","Vehicles:Server:ToggleAnchor","Vehicles:Tranfers:BeginConfirmation","Vehicles:Transfers:Confirm","Vehicles:Transfers:Deny","VehicleSync:Client:BodyRepair","VehicleSync:Client:Emergency","VehicleSync:Client:EmergencyAirhorn","VehicleSync:Client:OpenDoor","VehicleSync:Client:ShutDoor","VehicleSync:Client:SyncIndicators","VehicleSync:Client:SyncNeons","VehicleSync:Server:BodyRepair","VehicleSync:Server:Emergency","VehicleSync:Server:EmergencyAirhorn","VehicleSync:Server:EngineRepair"],
     commands: ["door","givekeys","seat","slimjim","tebexadddonatorplate","transfer","win"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-dealerships',
@@ -779,7 +728,6 @@ export const resources: Resource[] = [
     exports: ["DonatorAddPending","DonatorDeletePending","DonatorGetPending","DonatorRemovePending","ManagementGetAllData","ManagementGetData","ManagementLoadData","ManagementSetData","ManagementSetMultipleData","RecordsCreate","RecordsCreateBuyBack","RecordsGet","RecordsGetPage","ShowroomLoad","ShowroomUpdate","ShowroomUpdatePos","StockAdd","StockEnsure","StockFetchAll","StockFetchDealer","StockFetchDealerVehicle","StockHasVehicle","StockIncrease","StockRemove","StockUpdate"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-customs',
@@ -794,7 +742,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-fuel',
@@ -809,7 +756,6 @@ export const resources: Resource[] = [
     exports: ["CanBeFueled"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-tow',
@@ -824,7 +770,6 @@ export const resources: Resource[] = [
     exports: ["CleanupPickup","IsTowTruck","PayoutPickup"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-fitment',
@@ -839,7 +784,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-jobs',
@@ -854,7 +798,6 @@ export const resources: Resource[] = [
     exports: ["DataGet","DataSet","DoesExist","DutyGet","DutyGetDutyData","DutyOff","DutyOn","DutyRefreshDutyData","Get","GetAll","GetAllPermissions","GetJobs","GetJobSpawns","GetPermissionsFromJob","GiveJob","HasJob","HasPermission","HasPermissionInJob","IsOwner","IsOwnerOfCompany","ManagementCreate","ManagementDelete","ManagementEdit","ManagementEmployeesGetAll","ManagementEmployeesUpdateAllGrade","ManagementEmployeesUpdateAllJob","ManagementEmployeesUpdateAllWorkplace","ManagementGradesCreate","ManagementGradesDelete","ManagementGradesEdit","ManagementTransfer","ManagementUpgradesHas","ManagementUpgradesLock","ManagementUpgradesReset","ManagementUpgradesUnlock","ManagementWorkplaceEdit","RemoveJob"],
     events: ["Job:Client:DutyChanged","MetalDetector:Client:Sync","onClientResourceStart","onResourceStart","onResourceStop","Polyzone:Enter","Polyzone:Exit"],
     commands: [],
-    todoVerify: false,
   },
   {
     name: 'sandbox-labor',
@@ -869,7 +812,6 @@ export const resources: Resource[] = [
     exports: ["CancelOffer","CompleteOffer","CreateWorkgroup","DisbandWorkgroup","FailOffer","GetGroups","GetJobs","GetOffers","GetReputations","JailReleased","JailSentenced","JoinWorkgroup","LeaveWorkgroup","ManualFinishOffer","OffDuty","OnDuty","RegisterJob","RequestWorkgroup","SendWorkgroupEvent","StartOffer","TaskOffer","UpdateOffer"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-mechanic',
@@ -884,7 +826,6 @@ export const resources: Resource[] = [
     exports: ["CanAccessVehicleAsMechanic"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-police',
@@ -899,7 +840,6 @@ export const resources: Resource[] = [
     exports: ["HardCuff","HardCuffTarget","HaveEvaluated","IsEMSCar","IsInBreach","IsPdCar","RunPlate","SelfToggle","SoftCuff","SoftCuffTarget","ToggleCuffs","Uncuff","UncuffTarget"],
     events: ["Animations:Client:DoPDCallEmote","Characters:Client:Logout","Characters:Client:Spawn","Characters:Server:PlayerLoggedOut","Corrections:Client:OffDuty","Corrections:Client:OnDuty","Damage:Client:Ticks:Heal","EMS:Client:ApplyBandage","EMS:Client:ApplyMorphine","EMS:Client:ApplyTourniquet","EMS:Client:CheckICUPatients","EMS:Client:DismissTreatment","EMS:Client:DrugTest","EMS:Client:Evaluate","EMS:Client:FieldTreatWounds","EMS:Client:OffDuty","EMS:Client:OnDuty","EMS:Client:Stabilize","EMS:Client:Test","EMS:Client:TreatWounds","EMS:Server:CheckICUPatients","EMS:Server:Panic","EMS:Server:RequestHelp","Government:Client:BuyID","Government:Client:BuyLicense","Government:Client:DOJShop","Government:Client:DoLicenseBuy","Government:Client:DoWeaponsLicenseBuyPolice","Government:Client:Gavel","Government:Client:OffDuty","Government:Client:OnDuty","Government:Client:UseGavel","Government:Server:Gavel","Handcuffs:Client:CuffingAnim","Handcuffs:Client:CuffThread","Handcuffs:Client:DoCuffBreak","Handcuffs:Client:DoShittyAnim","Handcuffs:Client:FailCuffBreak","Handcuffs:Client:HardCuff","Handcuffs:Client:SoftCuff","Handcuffs:Client:Uncuff","Handcuffs:Client:UncuffingAnim","Handcuffs:Server:HardCuff","Handcuffs:Server:SoftCuff","Handcuffs:Server:Uncuff","Hospital:Client:GetOut","Job:Client:DutyChanged","Keybinds:Client:KeyDown:cancel_action","onClientResourceStart","onResourceStart","ox_inventory:ready","Police:Client:AddDeployedSpike","Police:Client:BAC","Police:Client:Breached","Police:Client:DNASwab","Police:Client:DoApartmentBreach","Police:Client:GetRadioChannel","Police:Client:GetTackled","Police:Client:GSR","Police:Client:OffDuty","Police:Client:OnDuty","Police:Client:OpenLocker","Police:Client:ReEnableTracker","Police:Client:RemoveMask","Police:Client:RemoveSpikes","Police:Client:RunPlate","Police:Client:Search","Police:Client:SpikeyBois","Police:Server:Cuff","Police:Server:Panic","Police:Server:RemoveSpikes","Police:Server:RunPlate","Police:Server:Slimjim","Police:Server:Tackle","Police:Server:ToggleCuff","Police:Server:Uncuff","Polyzone:Enter","Polyzone:Exit","Prison:Client:JailAlarm","Prison:Client:SetCellState","Prison:Client:SetLockdown","Prison:Server:Lockdown:AlertPolice","Test:Animation","Vehicles:Server:RequestGenerateVehicleInfo"],
     commands: ["311","311a","311r","911","911a","911r"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-cctv',
@@ -914,7 +854,6 @@ export const resources: Resource[] = [
     exports: ["Close","StateGroupOffline","StateGroupOnline","StateOffline","StateOnline","View","ViewGroup"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-mdt',
@@ -929,7 +868,6 @@ export const resources: Resource[] = [
     exports: ["BadgesClose","BadgesOpen","Close","DataAdd","DataRemove","DataReset","DataSet","DataUpdate","EmergencyAlertsClose","EmergencyAlertsCreate","EmergencyAlertsCreateClientAlert","EmergencyAlertsCreateIfReported","EmergencyAlertsDisableTracker","EmergencyAlertsGetUnitData","EmergencyAlertsOffDuty","EmergencyAlertsOnDuty","EmergencyAlertsOpen","EmergencyAlertsRefreshCallsign","EmergencyAlertsSendMemberUpdates","EmergencyAlertsSendOnDutyEvent","FirearmFlagsAdd","FirearmFlagsRemove","FirearmRegister","FirearmSearch","FirearmView","LibraryCreate","LibraryDelete","LicensesClose","LicensesOpen","MiscCreateBOLO","MiscCreateCharge","MiscCreateNotice","MiscDeleteBOLO","MiscDeleteCharge","MiscDeleteNotice","MiscUpdateCharge","MiscViewNotice","Open","PeopleSearchPeople","PeopleUpdate","PeopleView","ReportsCreate","ReportsDelete","ReportsSearch","ReportsSearchEvidence","ReportsUpdate","ReportsView","VehiclesFlagsAdd","VehiclesFlagsRemove","VehiclesGetStrikes","VehiclesSearch","VehiclesUpdateStrikes","VehiclesView","WarrantsCreate","WarrantsSearch","WarrantsUpdate","WarrantsView"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Characters:Client:Updated","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","EmergencyAlerts:Client:Clear","EmergencyAlerts:Client:Close","EmergencyAlerts:Client:Connect","EmergencyAlerts:Client:Disconnect","EmergencyAlerts:Client:Open","EmergencyAlerts:Client:PursuitModeChange","EmergencyAlerts:Client:RadioChannelChange","EmergencyAlerts:Client:TrackerBlip","EmergencyAlerts:Client:UpdateMember","EmergencyAlerts:Client:UpdateMembers","EmergencyAlerts:Client:UpdateTrackers","EmergencyAlerts:Server:DoPredefined","EmergencyAlerts:Server:ServerDoPredefined","Government:Client:AccessPublicRecords","Job:Client:DutyChanged","Job:Server:DutyAdd","Job:Server:DutyRemove","Jobs:Server:JobUpdate","Jobs:Server:UpdatedCache","MDT:Client:AddData","MDT:Client:Close","MDT:Client:DisableTracker","MDT:Client:Login","MDT:Client:Logout","MDT:Client:Open","MDT:Client:RemoveData","MDT:Client:ResetData","MDT:Client:SetData","MDT:Client:SetMultipleData","MDT:Client:ShowBadge","MDT:Client:ShowLicense","MDT:Client:Toggle","MDT:Client:ToggleBodyCam","MDT:Client:UpdateData","MDT:Client:UpdateJobData","MDT:Server:CloseMDT","MDT:Server:OpenDOCPublic","MDT:Server:OpenPublicRecords","MDT:Server:RegisterCallbacks","onClientResourceStart","onResourceStart","ox_inventory:ready","Ped:Client:Died","UI:Client:Reset"],
     commands: ["clearblips","mdt"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-radar',
@@ -944,7 +882,6 @@ export const resources: Resource[] = [
     exports: ["AddFlaggedPlate","CheckPlate","ClearFlaggedPlates","GetFlaggedPlates","RemoveFlaggedPlate"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-restaurant',
@@ -959,7 +896,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-taxi',
@@ -974,7 +910,6 @@ export const resources: Resource[] = [
     exports: ["HudHide","HudReset","HudShow","HudToggle","RateDecrease","RateIncrease","TripReset"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-billboards',
@@ -989,7 +924,6 @@ export const resources: Resource[] = [
     exports: ["Get","GetCategory","Set"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-casino',
@@ -1004,7 +938,6 @@ export const resources: Resource[] = [
     exports: ["ChipsGet","ChipsHas","ChipsModify","ConfigGet","ConfigSet"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-dj',
@@ -1019,7 +952,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-xmas',
@@ -1034,7 +966,6 @@ export const resources: Resource[] = [
     exports: ["SnowballsCanPickup","SnowballsPickup"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-voip',
@@ -1049,7 +980,6 @@ export const resources: Resource[] = [
     exports: ["AddPlayer","AddToCall","Cycle","GetCallVolume","GetRadioClickVolume","GetRadioVolume","MicClicks","RadioAddToChannel","RadioRemoveFromChannel","RadioSetChannel","RadioSetTalking","RemoveFromCall","RemovePlayer","SetCall","SetCallVolume","SetPlayerTargets","SetRadioClickVolume","SetRadioVolume","SetTalking","ToggleVoice"],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-radio',
@@ -1064,7 +994,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'sandbox-phone',
@@ -1079,7 +1008,6 @@ export const resources: Resource[] = [
     exports: ["AdvertsCreate","AdvertsDelete","AdvertsUpdate","CallAccept","CallCreate","CallCreateRecord","CallDecrypt","CallEnd","CallRead","CallReceive","CallStatus","Close","CoManagerFetchAllAccessibleRosters","CoManagerFetchTimeWorked","ContactsIsContact","DataAdd","DataRemove","DataReset","DataSet","DataUpdate","DocumentsCreate","DocumentsDelete","DocumentsEdit","EmailDelete","EmailRead","EmailSend","GeneratePhoneNumber","IsAppUsable","IsOpen","MessagesDelete","MessagesRead","NotificationAdd","NotificationAddWithId","NotificationRemove","NotificationRemoveById","NotificationReset","NotificationUpdate","Open","OpenLimited","OpenPayphone","PermissionsHasPermission","PermissionsLoad","PhotosCreate","PhotosDelete","PhotosFetch","ReceiveShare","ResetRoute","SetExpanded","StoreInstallCheck","StoreInstallDo","StoreUninstallCheck","StoreUninstallDo","TogglePhone","TwitterGet","TwitterPost","UpdateJobData"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Characters:Client:Updated","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","Crypto:Server:Startup","Hospital:Client:ICU:Sent","Jail:Client:Jailed","Job:Client:DutyChanged","onClientResourceStart","onResourceStart","ox_inventory:ready","Ped:Client:Died","Phone:Blueline:FinishRace","Phone:Blueline:NotifyDNF","Phone:Blueline:NotifyDNFStart","Phone:Client:AcceptBizCall","Phone:Client:AddData","Phone:Client:Biz:Answered","Phone:Client:Biz:End","Phone:Client:Biz:Recieve","Phone:Client:Blueline:CancelRace","Phone:Client:Blueline:CreateRace","Phone:Client:Blueline:FinishRace","Phone:Client:Blueline:JoinRace","Phone:Client:Blueline:LeaveRace","Phone:Client:Blueline:Spawn","Phone:Client:Blueline:StartRace","Phone:Client:Blueline:StoreSingleTrack","Phone:Client:Blueline:StoreTracks","Phone:Client:Chatter:GroupDeleted","Phone:Client:Chatter:Notify","Phone:Client:Chatter:ReceiveInvite","Phone:Client:Chatter:SetGroups","Phone:Client:Chatter:SetInvites","Phone:Client:Chatter:UpdateGroup","Phone:Client:Close","Phone:Client:CoManager:AcceptHire","Phone:Client:CoManager:AcceptXfer","Phone:Client:CoManager:DeclineHire","Phone:Client:CoManager:DeclineXfer","Phone:Client:CoManager:GetJobOffer","Phone:Client:CoManager:GetOfferResult","Phone:Client:CoManager:GetTransferRequest","Phone:Client:DeclineBizCall","Phone:Client:Documents:Deleted","Phone:Client:Documents:ReceivedSignature","Phone:Client:Documents:SigReqReceived","Phone:Client:Email:Delete","Phone:Client:Email:Receive","Phone:Client:Labor:NotifyEnd","Phone:Client:MakeBizCall","Phone:Client:MakeBizCallConfirm","Phone:Client:Messages:Notify","Phone:Client:Messages:SetThreads","Phone:Client:MuteBiz","Phone:Client:Notifications:Add","Phone:Client:Notifications:AddWithId","Phone:Client:Notifications:Remove","Phone:Client:Notifications:Update","Phone:Client:OpenLimited","Phone:Client:Payphone","Phone:Client:Phone:AcceptBizCall","Phone:Client:Phone:AcceptCall","Phone:Client:Phone:EndCall","Phone:Client:Phone:RecieveCall","Phone:Client:PingEm:AcceptPing","Phone:Client:PingEm:RejectPing","Phone:Client:ReceiveShare","Phone:Client:Redline:CancelRace","Phone:Client:Redline:CreateRace","Phone:Client:Redline:FinishRace","Phone:Client:Redline:JoinRace","Phone:Client:Redline:LeaveRace","Phone:Client:Redline:ReceiveInvite","Phone:Client:Redline:RemovedFromRace","Phone:Client:Redline:Spawn","Phone:Client:Redline:StartRace","Phone:Client:Redline:StoreSingleTrack","Phone:Client:Redline:StoreTracks","Phone:Client:RemoveData","Phone:Client:RemovePhone","Phone:Client:ResetData","Phone:Client:RestorePosition","Phone:Client:SetApps","Phone:Client:SetData","Phone:Client:SetDataMulti","Phone:Client:Twitter:ClearTweets","Phone:Client:Twitter:Notify","Phone:Client:Twitter:RemoveAccount","Phone:Client:UpdateData","Phone:Nui:Bank:AcceptBill","Phone:Nui:Bank:DenyBill","Phone:Nui:Phone:AcceptCall","Phone:Nui:Phone:EndCall","Phone:Redline:FinishRace","Phone:Redline:NotifyDNF","Phone:Redline:NotifyDNFStart","Phone:Server:AliasUpdated","Phone:Server:ForceEndBizCall"],
     commands: ["resetphonepos"],
-    todoVerify: false,
   },
   {
     name: 'sandbox-ws',
@@ -1094,7 +1022,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'screencapture',
@@ -1109,7 +1036,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'discord-screenshot',
@@ -1124,7 +1050,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'asset_fm_showroom',
@@ -1139,7 +1064,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'coords',
@@ -1154,7 +1078,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'webpack',
@@ -1169,7 +1092,6 @@ export const resources: Resource[] = [
     exports: [],
     events: [],
     commands: [],
-    todoVerify: true,
   },
   {
     name: 'xsound',
@@ -1184,7 +1106,6 @@ export const resources: Resource[] = [
     exports: ["Destroy","destroyOnFinish","Distance","fadeIn","fadeOut","getAllAudioInfo","getDistance","getInfo","getLink","getMaxDuration","getPosition","getTimeStamp","getVolume","isDynamic","isLooped","isPaused","isPlayerCloseToAnySound","isPlayerInStreamerMode","isPlaying","onLoading","onPlayEnd","onPlayPause","onPlayResume","onPlayStart","Pause","PlayUrl","PlayUrlPos","Position","repeatSound","Resume","setSoundDynamic","setSoundLoop","setSoundURL","setTimeStamp","setVolume","setVolumeMax","soundExists"],
     events: [],
     commands: [],
-    todoVerify: true,
   }
 ]
 

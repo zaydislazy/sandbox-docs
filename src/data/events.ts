@@ -106,8 +106,7 @@ export const eventsCatalog: EventDef[] = [
     resource: 'sandbox-base',
     kind: 'local',
     description:
-      'Legacy Mythic-era event name. Client triggers it; some server task/cron listeners still wait on it. TODO: verify whether TaskTick/CronTick actually start in production.',
-    todoVerify: true,
+      'Legacy Mythic-era event name. Client triggers it; some server task/cron listeners still wait on it. Confirm whether TaskTick/CronTick actually start in production.',
   },
   {
     id: 'playerdropped',

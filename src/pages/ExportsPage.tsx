@@ -61,7 +61,7 @@ export function ExportsPage() {
     >
       <Callout tone="note">
         Core sandbox-base / characters APIs include richer parameter docs. Remaining exports list name, realm, and
-        file with <code>TODO: verify</code> until signatures are confirmed from implementation.
+        file until signatures are confirmed from implementation.
       </Callout>
 
       <div className="sticky top-20 z-10 mb-8 space-y-4 rounded-2xl border border-border bg-surface/95 p-4 shadow-lg shadow-black/20 backdrop-blur">

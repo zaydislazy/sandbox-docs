@@ -1,5 +1,4 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { Callout } from '../components/Callout'
 import { PageHeader } from '../components/PageHeader'
 import { getEventsForResource } from '../data/events'
 import { getResource, resources } from '../data/resources'
@@ -21,13 +20,6 @@ export function ResourceDetail() {
   return (
     <article className="prose-docs mx-auto max-w-3xl">
       <PageHeader title={resource.name} description={resource.purpose} />
-
-      {resource.todoVerify ? (
-        <Callout tone="note">
-          High-level metadata for this resource was inferred from manifests and naming. Prefer reading its{' '}
-          <code>fxmanifest.lua</code> when integrating — marked TODO: verify where uncertain.
-        </Callout>
-      ) : null}
 
       <h2 id="overview">Overview</h2>
       <ul>

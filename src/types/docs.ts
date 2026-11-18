@@ -17,7 +17,6 @@ export interface ExportDef {
   returns: { type: string; description: string } | null
   example?: string
   file?: string
-  todoVerify?: boolean
 }
 
 export interface EventDef {
@@ -28,7 +27,6 @@ export interface EventDef {
   kind: 'net' | 'local' | 'middleware' | 'callback'
   description: string
   params?: Param[]
-  todoVerify?: boolean
 }
 
 export interface Resource {
@@ -45,7 +43,6 @@ export interface Resource {
   events: string[]
   commands: string[]
   configNotes?: string[]
-  todoVerify?: boolean
 }
 
 export type ResourceCategory =
@@ -87,7 +84,6 @@ export interface DbTable {
   name: string
   purpose: string
   related?: string[]
-  todoVerify?: boolean
 }
 
 export type CalloutTone = 'note' | 'warning' | 'tip' | 'danger'

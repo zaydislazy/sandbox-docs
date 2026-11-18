@@ -346,7 +346,7 @@ add_principal resource.sandbox-base group.admin
 add_ace identifier.steam:someId queue.management allow`}
       />
       <Callout tone="note">
-        Full staff capability checks also live in Lua (player Permissions helpers on sandbox-base). TODO: verify
+        Full staff capability checks also live in Lua (player Permissions helpers on sandbox-base). Confirm the
         exact ACE ↔ in-game role matrix during runtime.
       </Callout>
 
@@ -379,7 +379,7 @@ add_ace identifier.steam:someId queue.management allow`}
         </li>
         <li>
           <strong>Maps not loading</strong> — <code>ensure [assets_maps]</code> may not match the on-disk path{' '}
-          <code>resources/[assets]/[assets_maps]</code>. TODO: verify in a live artifact.
+          <code>resources/[assets]/[assets_maps]</code>. Confirm against a live artifact.
         </li>
       </ul>
       <p>

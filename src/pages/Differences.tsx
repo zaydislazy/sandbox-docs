@@ -69,7 +69,7 @@ local char = exports['sandbox-characters']:FetchCharacterSource(source)`}
       <ul>
         <li>
           Event name <code>Proxy:Shared:RegisterReady</code> still exists (client trigger; some server listeners).
-          TODO: verify task/cron startup.
+          Confirm task/cron startup behavior in production.
         </li>
         <li>Occasional Mythic asset/image naming leftovers are cosmetic only.</li>
       </ul>

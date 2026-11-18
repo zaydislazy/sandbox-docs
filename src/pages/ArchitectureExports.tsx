@@ -87,8 +87,7 @@ end)`}
       <h2 id="catalog">Catalog</h2>
       <p>
         Browse every discovered export in the <Link to="/exports">Exports API</Link>. Core APIs have richer
-        signatures; the rest are listed with realm/file and marked <code>TODO: verify</code> until parameters are
-        confirmed from call sites.
+        signatures; the rest are listed with realm/file until parameters are confirmed from call sites.
       </p>
     </DocPage>
   )

@@ -141,11 +141,6 @@ end)`}
                 <span className="rounded-md bg-surface-overlay px-2 py-0.5 text-[0.65rem] uppercase text-ink-faint">
                   {event.realm}
                 </span>
-                {event.todoVerify ? (
-                  <span className="rounded-md border border-warn/40 bg-warn-soft px-2 py-0.5 text-[0.65rem] text-warn">
-                    TODO: verify
-                  </span>
-                ) : null}
               </div>
               <p className="text-sm leading-relaxed text-ink-muted">{event.description}</p>
               <p className="mt-3 text-xs text-ink-faint">

@@ -32,11 +32,6 @@ export function ExportCard({ exportDef }: ExportCardProps) {
         >
           {exportDef.realm}
         </span>
-        {exportDef.todoVerify ? (
-          <span className="rounded-md border border-warn/40 bg-warn-soft px-2 py-0.5 text-xs text-warn">
-            TODO: verify
-          </span>
-        ) : null}
       </div>
       <p className="mb-3 text-sm text-ink-muted">
         Resource:{' '}

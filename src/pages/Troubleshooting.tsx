@@ -53,7 +53,7 @@ export function Troubleshooting() {
         </li>
         <li>
           <strong>Assets maps missing</strong> — <code>ensure [assets_maps]</code> may not match{' '}
-          <code>[assets]/[assets_maps]</code> on disk. TODO: verify path on a live server.
+          <code>[assets]/[assets_maps]</code> on disk. Confirm the path on a live server.
         </li>
         <li>
           <strong>sandbox-ws failures</strong> — missing cert/key or <code>WS_MDT_ALERTS</code> target down.

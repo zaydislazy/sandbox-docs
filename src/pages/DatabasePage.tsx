@@ -53,12 +53,7 @@ export function DatabasePage() {
             {dbTables.map((table) => (
               <tr key={table.name} className="border-t border-border">
                 <td className="px-3 py-2 font-mono text-accent">{table.name}</td>
-                <td className="px-3 py-2 text-ink-muted">
-                  {table.purpose}
-                  {table.todoVerify ? (
-                    <span className="ml-2 text-xs text-warn">TODO: verify relationships</span>
-                  ) : null}
-                </td>
+                <td className="px-3 py-2 text-ink-muted">{table.purpose}</td>
               </tr>
             ))}
           </tbody>
