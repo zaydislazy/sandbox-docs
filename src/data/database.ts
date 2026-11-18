@@ -4,7 +4,7 @@ export const dbTables: DbTable[] = [
   {
     name: 'app_profile_history',
     purpose: 'Table \`app_profile_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'bank_accounts',
@@ -14,12 +14,12 @@ export const dbTables: DbTable[] = [
   {
     name: 'bank_accounts_permissions',
     purpose: 'Table \`bank_accounts_permissions\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'bank_accounts_transactions',
     purpose: 'Table \`bank_accounts_transactions\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'bans',
@@ -29,132 +29,132 @@ export const dbTables: DbTable[] = [
   {
     name: 'bench_schematics',
     purpose: 'Table \`bench_schematics\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'billboards',
     purpose: 'Table \`billboards\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'blueline_race_history',
     purpose: 'Table \`blueline_race_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'blueline_track_history',
     purpose: 'Table \`blueline_track_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'blueline_tracks',
     purpose: 'Table \`blueline_tracks\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_configs',
     purpose: 'Table \`business_configs\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_documents',
     purpose: 'Table \`business_documents\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_notices',
     purpose: 'Table \`business_notices\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_phones',
     purpose: 'Table \`business_phones\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_receipts',
     purpose: 'Table \`business_receipts\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'business_tvs',
     purpose: 'Table \`business_tvs\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'casino_bigwins',
     purpose: 'Table \`casino_bigwins\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'casino_config',
     purpose: 'Table \`casino_config\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'casino_statistics',
     purpose: 'Table \`casino_statistics\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'changelogs',
     purpose: 'Table \`changelogs\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_app_profiles',
     purpose: 'Table \`character_app_profiles\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_calls',
     purpose: 'Table \`character_calls\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_chatter_groups',
     purpose: 'Table \`character_chatter_groups\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_contacts',
     purpose: 'Table \`character_contacts\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_documents',
     purpose: 'Table \`character_documents\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_documents_shared',
     purpose: 'Table \`character_documents_shared\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_emails',
     purpose: 'Table \`character_emails\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_messages',
     purpose: 'Table \`character_messages\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_parole',
     purpose: 'Table \`character_parole\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_photos',
     purpose: 'Table \`character_photos\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'character_schematics',
     purpose: 'Table \`character_schematics\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'characters',
@@ -164,77 +164,77 @@ export const dbTables: DbTable[] = [
   {
     name: 'chatter_groups',
     purpose: 'Table \`chatter_groups\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'chatter_messages',
     purpose: 'Table \`chatter_messages\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'crafting_cooldowns',
     purpose: 'Table \`crafting_cooldowns\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'dealer_data',
     purpose: 'Table \`dealer_data\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'dealer_records',
     purpose: 'Table \`dealer_records\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'dealer_records_buybacks',
     purpose: 'Table \`dealer_records_buybacks\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'dealer_showrooms',
     purpose: 'Table \`dealer_showrooms\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'dealer_stock',
     purpose: 'Table \`dealer_stock\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'donator_items',
     purpose: 'Table \`donator_items\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'donator_plates',
     purpose: 'Table \`donator_plates\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'donator_vehicles',
     purpose: 'Table \`donator_vehicles\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'donor_created_item',
     purpose: 'Table \`donor_created_item\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'firearms',
     purpose: 'Table \`firearms\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'firearms_flags',
     purpose: 'Table \`firearms_flags\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'firearms_projectiles',
     purpose: 'Table \`firearms_projectiles\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'jobs',
@@ -244,12 +244,12 @@ export const dbTables: DbTable[] = [
   {
     name: 'loans',
     purpose: 'Table \`loans\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'loans_credit_scores',
     purpose: 'Table \`loans_credit_scores\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'logs',
@@ -259,52 +259,52 @@ export const dbTables: DbTable[] = [
   {
     name: 'mdt_charges',
     purpose: 'Table \`mdt_charges\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_library',
     purpose: 'Table \`mdt_library\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_notices',
     purpose: 'Table \`mdt_notices\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_reports',
     purpose: 'Table \`mdt_reports\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_reports_evidence',
     purpose: 'Table \`mdt_reports_evidence\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_reports_people',
     purpose: 'Table \`mdt_reports_people\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'mdt_warrants',
     purpose: 'Table \`mdt_warrants\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'meth_tables',
     purpose: 'Table \`meth_tables\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'moonshine_barrels',
     purpose: 'Table \`moonshine_barrels\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'moonshine_stills',
     purpose: 'Table \`moonshine_stills\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'ox_doorlock',
@@ -314,27 +314,27 @@ export const dbTables: DbTable[] = [
   {
     name: 'peds',
     purpose: 'Table \`peds\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'placed_meth_tables',
     purpose: 'Table \`placed_meth_tables\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'placed_moonshine_barrels',
     purpose: 'Table \`placed_moonshine_barrels\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'placed_moonshine_stills',
     purpose: 'Table \`placed_moonshine_stills\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'placed_props',
     purpose: 'Table \`placed_props\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'properties',
@@ -344,32 +344,32 @@ export const dbTables: DbTable[] = [
   {
     name: 'properties_furniture',
     purpose: 'Table \`properties_furniture\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'redline_race_history',
     purpose: 'Table \`redline_race_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'redline_racer_history',
     purpose: 'Table \`redline_racer_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'redline_track_history',
     purpose: 'Table \`redline_track_history\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'redline_tracks',
     purpose: 'Table \`redline_tracks\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'scenes',
     purpose: 'Table \`scenes\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'sequence',
@@ -379,12 +379,12 @@ export const dbTables: DbTable[] = [
   {
     name: 'shop_bank_accounts',
     purpose: 'Table \`shop_bank_accounts\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'storage_units',
     purpose: 'Table \`storage_units\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'tokens',
@@ -399,11 +399,11 @@ export const dbTables: DbTable[] = [
   {
     name: 'weed',
     purpose: 'Table \`weed\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   },
   {
     name: 'whitelisted_peds',
     purpose: 'Table \`whitelisted_peds\` from database.sql.',
-    todoVerify: true,
+    todoVerify: false,
   }
 ]
