@@ -137,11 +137,17 @@ export const searchIndex: SearchEntry[] = [
   {
     "title": "Getting Important Data",
     "href": "/guide/getting-data",
-    "description": "Player and character data",
+    "description": "Player, local character, GetData keys, jobs, money",
     "keywords": [
       "getting",
       "important",
-      "data"
+      "data",
+      "character",
+      "localplayer",
+      "getdata",
+      "licenses",
+      "jobs",
+      "sid"
     ]
   },
   {
@@ -206,6 +212,30 @@ export const searchIndex: SearchEntry[] = [
       "troubleshooting",
       "&",
       "faq"
+    ]
+  },
+  {
+    "title": "Changelog",
+    "href": "/changelog",
+    "description": "Docs site change history",
+    "keywords": [
+      "changelog",
+      "changes",
+      "history",
+      "updates"
+    ]
+  },
+  {
+    "title": "Credits",
+    "href": "/credits",
+    "description": "AutLaaw, BadCodes, Mythic authors",
+    "keywords": [
+      "credits",
+      "autlaaw",
+      "badcodes",
+      "alzar",
+      "mythic",
+      "authors"
     ]
   },
   {

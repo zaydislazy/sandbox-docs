@@ -46,6 +46,8 @@ export const navGroups: NavGroup[] = [
     items: [
       { title: 'Admin & Permissions', href: '/admin', description: 'Roles, /admin, security warnings' },
       { title: 'Troubleshooting & FAQ', href: '/troubleshooting', description: 'Common failures and fixes' },
+      { title: 'Changelog', href: '/changelog', description: 'What changed on these docs' },
+      { title: 'Credits', href: '/credits', description: 'AutLaaw, BadCodes, Mythic authors' },
     ],
   },
 ]

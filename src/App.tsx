@@ -5,6 +5,8 @@ import { AdminPage } from './pages/AdminPage'
 import { Architecture } from './pages/Architecture'
 import { ArchitectureExports } from './pages/ArchitectureExports'
 import { ArchitectureNui } from './pages/ArchitectureNui'
+import { Changelog } from './pages/Changelog'
+import { Credits } from './pages/Credits'
 import { DatabasePage } from './pages/DatabasePage'
 import { Differences } from './pages/Differences'
 import { EventsPage } from './pages/EventsPage'
@@ -63,6 +65,8 @@ export default function App() {
           <Route path="database" element={<DatabasePage />} />
           <Route path="admin" element={<AdminPage />} />
           <Route path="troubleshooting" element={<Troubleshooting />} />
+          <Route path="changelog" element={<Changelog />} />
+          <Route path="credits" element={<Credits />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

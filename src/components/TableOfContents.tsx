@@ -14,6 +14,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   const [active, setActive] = useState(headings[0]?.id ?? '')
 
   useEffect(() => {
+    setActive(headings[0]?.id ?? '')
     if (headings.length === 0) return
 
     const elements = headings

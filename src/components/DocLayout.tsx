@@ -63,7 +63,14 @@ export function DocLayout({ children }: DocLayoutProps) {
   }, [])
 
   useEffect(() => {
+    // Clear immediately so the previous page's TOC (e.g. changelog dates) never sticks.
+    setHeadings([])
+
+    let cancelled = false
+    let frame2 = 0
+
     const readHeadings = () => {
+      if (cancelled) return
       const nodes = Array.from(
         document.querySelectorAll<HTMLElement>('.prose-docs h2[id], .prose-docs h3[id]'),
       )
@@ -76,12 +83,28 @@ export function DocLayout({ children }: DocLayoutProps) {
       )
     }
 
-    readHeadings()
-    const frame = window.requestAnimationFrame(readHeadings)
-    return () => window.cancelAnimationFrame(frame)
+    // Wait until the new route's content is actually in the DOM.
+    const frame1 = window.requestAnimationFrame(() => {
+      frame2 = window.requestAnimationFrame(readHeadings)
+    })
+    const timeout = window.setTimeout(readHeadings, 50)
+
+    return () => {
+      cancelled = true
+      window.cancelAnimationFrame(frame1)
+      window.cancelAnimationFrame(frame2)
+      window.clearTimeout(timeout)
+    }
   }, [location.pathname])
 
   const current = flatNav.find((item) => item.href === location.pathname)
+
+  function navLinkEnd(href: string) {
+    // NavLink matches prefixes by default — `/architecture` would stay active on
+    // `/architecture/exports`. Use exact match when this href is a parent of another item.
+    if (href === '/') return true
+    return flatNav.some((other) => other.href !== href && other.href.startsWith(`${href}/`))
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -186,7 +209,7 @@ export function DocLayout({ children }: DocLayoutProps) {
                     <li key={item.href}>
                       <NavLink
                         to={item.href}
-                        end={item.href === '/'}
+                        end={navLinkEnd(item.href)}
                         className={({ isActive }) =>
                           `block rounded-md px-2.5 py-2 text-sm leading-snug transition-colors duration-150 ${
                             isActive

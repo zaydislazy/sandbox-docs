@@ -76,8 +76,8 @@ local char = exports['sandbox-characters']:FetchCharacterSource(source)`}
 
       <h2 id="credits">Credits</h2>
       <p>
-        Original Mythic Framework by Alzar &amp; Dr. Nick. Sandbox modifications are released with their
-        permission (see root README).
+        Original Mythic Framework by Alzar &amp; Dr. Nick. Sandbox lineage includes AutLaaw and BadCodes — full
+        list on the <Link to="/credits">Credits</Link> page.
       </p>
     </DocPage>
   )

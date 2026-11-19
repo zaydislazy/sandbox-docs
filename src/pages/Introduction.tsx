@@ -47,7 +47,8 @@ export function Introduction() {
 
       <Callout tone="note" title="Credits">
         Released with full permissions from the original Mythic Framework authors, <strong>Alzar</strong> and{' '}
-        <strong>Dr. Nick</strong>.
+        <strong>Dr. Nick</strong>. Sandbox credits for <strong>AutLaaw</strong> and <strong>BadCodes</strong> are on
+        the <Link to="/credits">Credits</Link> page.
       </Callout>
 
       <h2 id="relationship-to-mythic">Relationship to Mythic</h2>
