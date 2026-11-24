@@ -5,7 +5,7 @@ interface PageMotionProps {
   children: ReactNode
 }
 
-/** Lightweight route enter animation without an animation library. */
+// tiny fade-in on route change, no animation lib needed
 export function PageMotion({ children }: PageMotionProps) {
   const location = useLocation()
   return (

@@ -7,7 +7,7 @@ export function ArchitectureExports() {
   return (
     <DocPage
       title="Exports System"
-      description="How Sandbox replaced Mythic components with native FiveM exports plus sandbox-base platform APIs."
+      description="How resources register and call native FiveM exports, plus sandbox-base platform APIs."
       href="/architecture/exports"
     >
       <Callout tone="note">
@@ -19,7 +19,7 @@ export function ArchitectureExports() {
       <h2 id="register">Registering</h2>
       <CodeBlock
         language="lua"
-        code={`-- often in server/component.lua or core/*.lua
+        code={`-- usually lives in server/component.lua
 exports("FetchCharacterSource", function(source)
   return ONLINE_CHARACTERS[source]
 end)`}

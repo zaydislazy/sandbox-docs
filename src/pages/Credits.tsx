@@ -1,41 +1,32 @@
 import { Link } from 'react-router-dom'
-import { Callout } from '../components/Callout'
 import { DocPage } from '../components/DocPage'
 
 export function Credits() {
   return (
     <DocPage
       title="Credits"
-      description="People and projects behind Sandbox and these unofficial docs."
+      description="People and projects behind Sandbox and this docs site."
       href="/credits"
     >
-      <Callout tone="note">
-        Sandbox is released with permission from the original Mythic Framework authors. This docs site is unofficial
-        and community-maintained.
-      </Callout>
-
       <h2 id="sandbox">Sandbox RP Framework</h2>
       <ul>
         <li>
-          <strong>AutLaaw</strong> — current Sandbox maintainer / publisher (
+          <strong>AutLaaw</strong> — current maintainer (
           <a href="https://github.com/AutLaaw/sandbox-fivem" target="_blank" rel="noreferrer">
             AutLaaw/sandbox-fivem
           </a>
-          ).
+          )
         </li>
         <li>
-          <strong>BadCodes</strong> — original Sandbox developers / earlier Sandbox lineage (
+          <strong>BadCodes</strong> — original Sandbox lineage (
           <a href="https://github.com/BadCodesGG/sandbox-fivem" target="_blank" rel="noreferrer">
             BadCodesGG/sandbox-fivem
           </a>
-          ).
+          )
         </li>
       </ul>
 
-      <h2 id="mythic">Mythic Framework</h2>
-      <p>
-        Sandbox started as a heavily modified Mythic fork. Original Mythic Framework authors:
-      </p>
+      <h2 id="original-authors">Original framework authors</h2>
       <ul>
         <li>
           <strong>Alzar</strong>
@@ -45,8 +36,8 @@ export function Credits() {
         </li>
       </ul>
       <p>
-        Public Mythic docs still exist, but many architecture claims there do not apply to Sandbox — see{' '}
-        <Link to="/differences">Differences from Mythic</Link>.
+        Sandbox is released with their permission. If you&apos;re migrating from an older fork, see{' '}
+        <Link to="/differences">Coming from older forks</Link>.
       </p>
 
       <h2 id="docs">These docs</h2>
@@ -55,15 +46,15 @@ export function Credits() {
           Maintained by{' '}
           <a href="https://github.com/zaydislazy" target="_blank" rel="noreferrer">
             zaydislazy
-          </a>{' '}
-          — not an official Sandbox RP or Mythic publication.
+          </a>
         </li>
       </ul>
 
-      <h2 id="upstream">Other upstreams you will see in-tree</h2>
+      <h2 id="upstream">Other upstreams in-tree</h2>
       <ul>
         <li>Overextended (ox_lib, ox_inventory, ox_target, ox_doorlock)</li>
         <li>Cfx.re / FiveM platform resources</li>
+        <li>Project Error and other NUI boilerplates credited in individual resource READMEs</li>
       </ul>
     </DocPage>
   )

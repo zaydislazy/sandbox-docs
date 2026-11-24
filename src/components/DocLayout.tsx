@@ -63,7 +63,7 @@ export function DocLayout({ children }: DocLayoutProps) {
   }, [])
 
   useEffect(() => {
-    // Clear immediately so the previous page's TOC (e.g. changelog dates) never sticks.
+    // wipe old TOC so it doesn't bleed onto the next page
     setHeadings([])
 
     let cancelled = false
@@ -83,7 +83,7 @@ export function DocLayout({ children }: DocLayoutProps) {
       )
     }
 
-    // Wait until the new route's content is actually in the DOM.
+    // page content mounts a tick late, so we poke twice
     const frame1 = window.requestAnimationFrame(() => {
       frame2 = window.requestAnimationFrame(readHeadings)
     })
@@ -100,8 +100,7 @@ export function DocLayout({ children }: DocLayoutProps) {
   const current = flatNav.find((item) => item.href === location.pathname)
 
   function navLinkEnd(href: string) {
-    // NavLink matches prefixes by default — `/architecture` would stay active on
-    // `/architecture/exports`. Use exact match when this href is a parent of another item.
+    // without end, /architecture stays lit on /architecture/exports
     if (href === '/') return true
     return flatNav.some((other) => other.href !== href && other.href.startsWith(`${href}/`))
   }
@@ -133,7 +132,7 @@ export function DocLayout({ children }: DocLayoutProps) {
               className="h-10 w-auto max-w-[200px] object-contain object-left sm:h-11 sm:max-w-[240px]"
             />
             <span className="hidden rounded-md border border-accent/30 bg-accent-soft px-2 py-0.5 text-[0.65rem] font-semibold tracking-wide text-accent uppercase md:inline">
-              Unofficial Docs
+              Docs
             </span>
           </Link>
 
@@ -188,7 +187,7 @@ export function DocLayout({ children }: DocLayoutProps) {
         >
           <div className="border-b border-border px-4 py-4 lg:hidden">
             <img src="/logo.png" alt="" className="h-9 w-auto object-contain" />
-            <p className="mt-2 text-xs text-ink-faint">Unofficial community docs</p>
+            <p className="mt-2 text-xs text-ink-faint">Sandbox framework docs</p>
           </div>
 
           <nav aria-label="Documentation" className="space-y-7 p-4 pb-10">
@@ -254,11 +253,7 @@ export function DocLayout({ children }: DocLayoutProps) {
           <footer className="mt-auto border-t border-border bg-surface-raised/60 px-5 py-8 md:px-10 lg:px-12">
             <div className="flex max-w-3xl flex-col gap-4 text-sm text-ink-muted">
               <p>
-                These are <strong className="text-ink">unofficial docs</strong> for Sandbox Roleplay — not affiliated
-                with the official Sandbox RP team or Mythic Framework.
-              </p>
-              <p>
-                Built &amp; maintained by{' '}
+                Docs for Sandbox Roleplay. Maintained by{' '}
                 <a
                   href="https://github.com/zaydislazy"
                   target="_blank"
@@ -267,7 +262,7 @@ export function DocLayout({ children }: DocLayoutProps) {
                 >
                   zaydislazy
                 </a>
-                . Source framework:{' '}
+                . Framework:{' '}
                 <a
                   href="https://github.com/AutLaaw/sandbox-fivem"
                   target="_blank"
@@ -276,11 +271,13 @@ export function DocLayout({ children }: DocLayoutProps) {
                 >
                   AutLaaw/sandbox-fivem
                 </a>
+                . Want to help? See{' '}
+                <Link to="/contribute" className="text-accent transition hover:text-accent-gold">
+                  Contributing
+                </Link>
                 .
               </p>
-              <p className="text-xs text-ink-faint">
-                © {new Date().getFullYear()} zaydislazy · Community documentation
-              </p>
+              <p className="text-xs text-ink-faint">© {new Date().getFullYear()} zaydislazy</p>
             </div>
           </footer>
         </div>

@@ -1,8 +1,8 @@
 # Sandbox Framework Docs
 
-Standalone documentation site for the [Sandbox RP Framework](https://github.com/AutLaaw/sandbox-fivem).
+Documentation site for the [Sandbox RP Framework](https://github.com/AutLaaw/sandbox-fivem).
 
-This folder is **not** a FiveM resource. It is never started by the server and has no `fxmanifest.lua`.
+Not a FiveM resource — don't put this folder in `resources.cfg`.
 
 ## Requirements
 
@@ -13,8 +13,8 @@ This folder is **not** a FiveM resource. It is never started by the server and h
 ```bash
 bun install
 bun run dev      # http://localhost:5173
-bun run build    # output → dist/
-bun run preview  # preview production build
+bun run build
+bun run preview
 ```
 
 ## Stack
@@ -22,19 +22,13 @@ bun run preview  # preview production build
 - Vite + React + TypeScript
 - Tailwind CSS v4
 - React Router
-- Content driven from typed data under `src/data/`
+- Content in `src/pages/` + catalogs in `src/data/`
 
-## Regenerating catalogs
+## Contributing
 
-From the repo root (optional; only if Lua exports change):
-
-```bash
-bun _docs_extract/extract.mjs
-# optional richer core extract: _docs_extract/extract_docs.ps1
-bun _docs_extract/merge-and-generate.mjs
-bun _docs_extract/gen-search.mjs
-```
+See [CONTRIBUTING.md](./CONTRIBUTING.md) or the [Contributing](/contribute) page once the site is running.
 
 ## Credits
 
-Sandbox is a heavily modified fork of Mythic Framework, released with permission from Alzar & Dr. Nick.
+Sandbox: AutLaaw, BadCodes, and original framework authors Alzar & Dr. Nick.  
+Docs: [zaydislazy](https://github.com/zaydislazy).

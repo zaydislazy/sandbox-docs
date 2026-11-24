@@ -94,7 +94,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 7,
-    dbTables: [],
+    dbTables: ['bans', 'logs', 'sequence', 'tokens'],
     exports: ["AddPlayerToRoute","CheckTokens","ClientCallback","CloneDeep","ConfigGetDiscord","ConfigGetGroupById","ConfigGetGroupPermission","ConfigGetGroupQueuePriority","ConfigGetGroups","ConfigGetServer","ConfigUpdateGroups","CreateRouteId","CreateStore","CronDelete","CronPause","CronRegister","CronResume","CronSkip","DeleteCharacterStore","DeleteEntity","DeleteObject","DeletePed","DeleteStore","DeleteVehicle","DiscordGetMember","DiscordRequest","DiscordRichPresence","DoClientCallback","DoServerCallback","DropAll","FetchAll","FetchCharacter","FetchCount","FetchPlayer","FetchPlayerData","FetchSource","FetchWebsite","GameObjectsDelete","GameObjectsGetAll","GameObjectsGetInArea","GameObjectsSpawn","GameObjectsSpawnLocal","GameObjectsSpawnLocalNoOffset","GamePlayersGetClosestPlayer","GamePlayersGetPlayerPeds","GameVehiclesDelete","GameVehiclesSpawn","GameVehiclesSpawnLocal","GeneratorAddressCity","GeneratorAddressState","GeneratorAddressStreet","GeneratorAddressStreetSecondary","GeneratorColor","GeneratorCompany","GeneratorDataFloat","GeneratorDataNumber","GeneratorDataString","GeneratorDataUUID","GeneratorDateFuture","GeneratorDatePast","GeneratorDateRecent","GeneratorDateSoon","GeneratorFinanceAccount","GeneratorFinanceCreditCard","GeneratorFinanceCryptoAddress","GeneratorHackerAbbreviation","GeneratorHackerAdjective","GeneratorHackerIngVerb","GeneratorHackerNoun","GeneratorHackerVerb","GeneratorImageAvatar","GeneratorImageImage","GeneratorInternetAvatar","GeneratorInternetDomain","GeneratorInternetEmail","GeneratorInternetIP","GeneratorInternetIPv6","GeneratorInternetMacAddress","GeneratorJob","GeneratorNameFirst","GeneratorNameLast","GeneratorNameMiddle","GeneratorPhone","GeneratorVehicleColor","GeneratorVehicleMake","GeneratorVehicleMakeModel","GeneratorVehicleModel","GeneratorVehiclePlate","GeneratorVehicleVIN","GeneratorWordAdjective","GeneratorWordAdverb","GeneratorWordNoun","GeneratorWordVerb","GetAccessRole","GetAllPlayers","GetApiAddress","GetApiId","GetApiSecret","GetCharacterData","GetDiscordApp","GetDiscordBotToken","GetEnvironment","GetLocalPlayer","GetLogging","GetMaxClients","GetPlayer","GetPlayerData","GetPlayerLicense","GetPlayerRoute","GetRecentDisconnects","GetRouteId","GetSbfwVersion","GetStore","LoggerCritical","LoggerError","LoggerInfo","LoggerTrace","LoggerWarn","MiddlewareAdd","MiddlewareTriggerEvent","MiddlewareTriggerEventWithData","MoveEntityToGlobalRoute","NetworkExplodeVehicle","PunishmentActionsBan","PunishmentActionsKick","PunishmentActionsUnban","PunishmentBanAccountID","PunishmentBanIdentifier","PunishmentBanSource","PunishmentCheckBan","PunishmentKick","PunishmentUnbanAccountID","PunishmentUnbanBanID","PunishmentUnbanIdentifier","RegexTest","RegisterClientCallback","RegisterServerCallback","RemoveRouteId","RequestRouteId","RoutePlayerToGlobalRoute","RoutePlayerToHiddenRoute","ScaleformRequest","ScaleformRequestHud","ScopesGetScope","ScopesIsPlayerInScope","ScopesTriggerScopeEvent","SequenceGet","SequenceSave","ServerCallback","SetCharacterData","SetEntityAsNoLongerNeeded","SetPedKeepTask","SetPlayerData","SetVehicleBodyHealth","SetVehicleDeformationFixed","SetVehicleDoorBroken","SetVehicleDoorOpen","SetVehicleDoorShut","SetVehicleEngineHealth","SetVehicleFixed","SetVehicleTyreBurst","SetVehicleTyreFixed","Shutdown","StreamRequestAnimDict","StreamRequestAnimSet","StreamRequestModel","TaskFollowNavMeshToCoord","TaskGoToCoordAnyMeans","TasksDelete","TasksPause","TasksRegister","TasksResume","TasksSkip","TaskWanderInArea","UtilsDoesTableHaveValue","UtilsGetTableKeys","UtilsGetTableLength","UtilsPrint","UtilsRound","UtilsWeightedRandom","WaitListCreate","WaitListInteractActive","WaitListInteractAdd","WaitListInteractInactive","WaitListInteractPop","WaitListInteractRemove","WaitListIsInQueue","WaitListPause","WaitListPrintQueue","WaitListUnpause","WebAPIGetMemberAccountID","WebAPIGetMemberIdentifier","WebAPIRequest","WebAPIValidate"],
     events: ["Callbacks:Client:ReceiveCallback","Callbacks:Client:TriggerEvent","Characters:Client:SetData","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","Core:Server:ForceAllSave","Core:Server:ForceSave","Core:Server:ForceUnload","Core:Server:ResourceStopped","Core:Server:SessionStarted","Core:Server:StartupReady","Core:Shared:Watermark","Error:Server:Report","NetSync:Client:Execute","NetSync:Server:Request","onClientResourceStart","onResourceStart","onResourceStopped","Player:Client:SetData","playerDropped","playerEnteredScope","playerLeftScope","Proxy:Shared:RegisterReady","Queue:Server:SessionActive","Routing:Client:NewRoute","Scopes:Client:PlayerEnterScope","Scopes:Client:PlayerLeftScope","txAdmin:events:scheduledRestart"],
     commands: ["rcondisablelockdown"],
@@ -136,7 +136,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 10,
-    dbTables: [],
+    dbTables: ['placed_props'],
     exports: ["Create","Delete","Info","PlacerCancel","PlacerEnd","PlacerStart"],
     events: [],
     commands: [],
@@ -178,7 +178,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/dist/index.html',
     uiBundler: 'webpack',
     ensureOrder: 13,
-    dbTables: ["characters","peds"],
+    dbTables: ['characters', 'peds', 'changelogs', 'whitelisted_peds'],
     exports: ["DefaultSpawnCoords","FetchAllCharacters","FetchByID","FetchBySID","FetchCharacterData","FetchCharacterSource","FetchCountCharacters","FetchGetOfflineData","GetAllLocations","GetLastLocation","Logout","RepAdd","RepCreate","RepGetLevel","RepGetLevelData","RepHasLevel","RepRemove","RepView","RepViewList","SpawnInit","SpawnInitCamera","SpawnToWorld"],
     events: ["Characters:Client:Logout","Characters:Client:Logout:Event","Characters:Client:SetData","Characters:Client:Spawn","Characters:Client:Spawned","Characters:Server:DropCleanup","Characters:Server:LastLocation","Characters:Server:PlayerLoggedOut","Characters:Server:Spawn","Characters:Server:Spawning","Locations:Client:LogoutLocation","onClientResourceStart","onResourceStart","ox_inventory:ready","Player:Server:Connected","playerDropped"],
     commands: [],
@@ -192,7 +192,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/',
     uiBundler: 'webpack',
     ensureOrder: 14,
-    dbTables: [],
+    dbTables: ['peds', 'whitelisted_peds'],
     exports: ["ApplyOutfit","ApplyToPed","CreatorEnd","CreatorStart","CustomizationCancel","CustomizationHide","CustomizationSave","CustomizationShow","HatEquip","HatUnequip","MaskEquip","MaskUnequip","MaskUnequipNoItem","NecklaceEquip","NecklaceUnequip","NecklaceUnequipNoItem","PlacePedIntoWorld","Preview","Save","SpawnInit","SpawnInitCamera","SpawnToWorld","WardrobeClose","WardrobeShow"],
     events: [],
     commands: [],
@@ -360,7 +360,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 26,
-    dbTables: [],
+    dbTables: ['scenes'],
     exports: ["BeginCreation","Create","Delete","Deletion","Edit"],
     events: [],
     commands: [],
@@ -402,7 +402,7 @@ export const resources: Resource[] = [
     uiPath: 'web/',
     uiBundler: 'vite',
     ensureOrder: 29,
-    dbTables: [],
+    dbTables: ['ox_inventory'],
     exports: ["addCash","AddItem","AddSlot","AmmoAdd","BuildMetaDataTable","CanCarryAmount","CanCarryItem","CanCarryWeight","CancelProgress","CanSwapItem","CheckPlayerHasAnyItems","CheckPlayerHasItem","CheckPlayerHasItems","ClearInventory","ClearStaleIdentifier","CloseAll","closeInventory","ConfiscateInventory","ConvertItems","CountInSlot","CreateDropFromPlayer","CreateTemporaryStash","CustomDrop","Disable","displayMetadata","DumbfuckOpen","Enable","forceOpenInventory","GetAllOfTypeNoStack","getAllUtilitySlots","getBank","getCards","getCash","GetContainerFromSlot","getCurrentWeapon","GetCurrentWeapon","GetEmptySlot","GetEquippedHash","GetInventory","GetInventoryItems","GetItem","GetItemCount","GetItemSlots","GetNumberOfFreeSlots","GetPlayerItems","GetPlayerMaxWeight","GetPlayerWeight","GetSlot","GetSlotCount","GetSlotForItem","GetSlotIdsWithItem","GetSlotIdWithItem","GetSlots","GetSlotsWithItem","GetSlotWithItem","getUtilitySlotItem","GetWithStaticMetadata","giveCard","giveItemToTarget","HoldingPut","HoldingTake","InspectInventory","Inventory","IsEnabled","ItemList","Items","ItemsGetAll","ItemsGetCount","ItemsGetData","ItemsGetFirst","ItemsGetWithStaticMetadata","ItemsHas","ItemsHasAnyItems","ItemsHasItems","ItemsHasType","Keyboard","LootCustomSet","LootCustomSetWithCount","LootCustomWeightedSet","LootCustomWeightedSetWithCount","LootCustomWeightedSetWithCountAndModifier","LootGem","LootGemRandom","LootItemClass","LootOre","notify","OldGetSlot","openInventory","openNearbyInventory","OpenSecondary","Progress","ProgressActive","registerHook","RegisterShop","RegisterStash","RegisterUse","Remove","RemoveAll","removeCash","removeHooks","RemoveId","RemoveInventory","RemoveItem","RemoveList","RemoveSlot","ReturnInventory","Rob","Search","SearchCharacter","setContainerProperties","SetDurability","SetInventorySource","SetItem","SetItemCreateDate","SetMaxWeight","SetMetadata","SetMetaDataKey","setPlayerInventory","SetSlotCount","setStashTarget","suppressItemNotifications","SwapSlots","Toggle","UnequipIfEquipped","UnequipIfEquippedNoAnim","UpdateMetaData","UpdateVehicle","useItem","useSlot","weaponWheel"],
     events: [],
     commands: [],
@@ -500,7 +500,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 36,
-    dbTables: [],
+    dbTables: ['firearms', 'firearms_flags', 'firearms_projectiles'],
     exports: [],
     events: [],
     commands: [],
@@ -514,7 +514,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/',
     uiBundler: 'webpack',
     ensureOrder: 37,
-    dbTables: [],
+    dbTables: ['business_configs', 'business_documents', 'business_notices', 'business_phones', 'business_receipts', 'business_tvs'],
     exports: ["StorageUnitsAccess","StorageUnitsCreate","StorageUnitsDelete","StorageUnitsGet","StorageUnitsGetAll","StorageUnitsGetAllManagedBy","StorageUnitsGetNearUnit","StorageUnitsManage","StorageUnitsManageAll","StorageUnitsSell","StorageUnitsUpdate"],
     events: [],
     commands: [],
@@ -542,7 +542,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/dist/index.html',
     uiBundler: 'webpack',
     ensureOrder: 39,
-    dbTables: [],
+    dbTables: ['bank_accounts', 'bank_accounts_permissions', 'bank_accounts_transactions', 'loans', 'loans_credit_scores', 'shop_bank_accounts'],
     exports: ["AccountsAddPersonalSavingsJointOwner","AccountsCreatePersonal","AccountsCreatePersonalSavings","AccountsGet","AccountsGetOrganization","AccountsGetPersonal","AccountsRemovePersonalSavingsJointOwner","BalanceCharge","BalanceDeposit","BalanceGet","BalanceHas","BalanceWithdraw","BillingAccept","BillingCharge","BillingCreate","BillingDismiss","BillingFine","BillingPlayerCreateOrganizationBill","CryptoCoinCreate","CryptoCoinGet","CryptoCoinGetAll","CryptoExchangeAdd","CryptoExchangeBuy","CryptoExchangeIsListed","CryptoExchangeRemove","CryptoExchangeSell","CryptoExchangeTransfer","CryptoHas","LoansCreatePropertyLoan","LoansCreateVehicleLoan","LoansCreditDecrease","LoansCreditGet","LoansCreditIncrease","LoansCreditSet","LoansGetAllowedLoanAmount","LoansGetDefaultInterestRate","LoansGetPlayerLoans","LoansHasBeenDefaulted","LoansHasRemainingPayments","LoansMakePayment","TransactionLogsAdd","WalletGet","WalletHas","WalletModify"],
     events: ["Banking:Client:StartOpenATM","Characters:Client:Spawn","Characters:Client:Updated","Finance:Client:HandOffCash","Finance:Client:OpenUI","Finance:Client:Paycheck","Finance:Server:Startup","Jobs:Server:CompleteStartup","Keybinds:Client:KeyUp:primary_action","onClientResourceStart","onResourceStart","ox_inventory:ready","Polyzone:Enter","Polyzone:Exit","UI:Client:Reset","Wallet:ShowCash"],
     commands: ["cash","fine","givecash","testloans"],
@@ -556,7 +556,7 @@ export const resources: Resource[] = [
     uiPath: 'web/',
     uiBundler: 'vite',
     ensureOrder: 40,
-    dbTables: [],
+    dbTables: ['ox_doorlock'],
     exports: ["editDoor","getAllDoors","getClosestDoor","getClosestDoorId","getDoor","getDoorFromName","getDoorIdFromEntity","getKeyfobRange","IsLocked","pickClosestDoor","setDoorState","SetLock","SetUnlock","useClosestDoor","useKeyfob"],
     events: [],
     commands: [],
@@ -584,7 +584,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/',
     uiBundler: 'webpack',
     ensureOrder: 42,
-    dbTables: [],
+    dbTables: ['business_configs', 'business_documents', 'business_notices', 'business_receipts', 'blueline_race_history', 'blueline_track_history', 'blueline_tracks', 'redline_race_history', 'redline_racer_history', 'redline_track_history', 'redline_tracks'],
     exports: ["AddData","AddNotification","AddNotificationWithId","AttemptChop","BizWizDocumentsCreate","BizWizDocumentsDelete","BizWizDocumentsSearch","BizWizDocumentsUpdate","BizWizDocumentsView","BizWizNoticesCreate","BizWizNoticesDelete","BizWizReceiptsCreate","BizWizReceiptsDelete","BizWizReceiptsDeleteAll","BizWizReceiptsSearch","BizWizReceiptsUpdate","BizWizReceiptsView","ChoppingCreateBlips","Close","HasPermission","IsAppUsable","IsOpen","LoadPermissions","LSUndergroundBoostingCancel","LSUndergroundBoostingComplete","LSUndergroundBoostingGiveContract","LSUndergroundBoostingRewardContract","LSUndergroundBoostingStart","LSUndergroundChoppingCreatePickupBox","LSUndergroundChoppingFindList","LSUndergroundChoppingGenerateList","LSUndergroundChoppingInProgress","LSUndergroundChoppingIsOnList","LSUndergroundChoppingRemoveFromList","Open","RemoveData","RemoveNotification","RemoveNotificationById","ResetData","ResetNotifications","ResetRoute","SetData","TeamsCreate","TeamsDelete","TeamsGet","TeamsGetAll","TeamsGetByMember","TeamsGetByMemberSource","TeamsMembersAdd","TeamsMembersNotification","TeamsMembersNotificationAddWithId","TeamsMembersNotificationRemoveById","TeamsMembersNotificationUpdate","TeamsMembersRemove","TeamsMembersSendEvent","TeamsRequestsAdd","TeamsRequestsClear","TeamsRequestsGet","TeamsResetState","TeamsSetState","UpdateData","UpdateJobData","UpdateNotification"],
     events: [],
     commands: [],
@@ -626,7 +626,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 45,
-    dbTables: [],
+    dbTables: ['properties', 'properties_furniture', 'storage_units'],
     exports: ["Add","AddBackdoor","AddFrontdoor","AddGarage","Buy","ClientEnter","Closet","Delete","EditMode","Enter","ForceEveryoneLeave","Foreclose","Get","GetCurrent","GetInside","GetMaxParkingSpaces","GetNearHouse","GetNearHouseBackdoor","GetNearHouseGarage","GetProperties","GetPropertiesWithAccess","GetUpgradesConfig","GiveKey","HasAccessWithData","HasKey","HasKeyBySID","IsNearProperty","Logout","Move","Place","Preview","Sell","SetData","SetLabel","SetLock","SetPrice","Stash","TakeKey","ToggleLock","UpgradeDecrease","UpgradeGet","UpgradeIncrease","UpgradeSet","UpgradeSetInterior"],
     events: [],
     commands: [],
@@ -640,7 +640,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 46,
-    dbTables: [],
+    dbTables: ['weed'],
     exports: ["PlantingCreate","PlantingDelete","PlantingSet"],
     events: [],
     commands: [],
@@ -654,7 +654,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 47,
-    dbTables: [],
+    dbTables: ['meth_tables', 'placed_meth_tables', 'moonshine_barrels', 'moonshine_stills', 'placed_moonshine_barrels', 'placed_moonshine_stills'],
     exports: ["AddictionAdd","AddictionRemove","AddictionReset","ClearPlacementData","GetPlacementData","MethCreatePlacedTable","MethFinishTableCook","MethGenerateTable","MethGetTable","MethIsTablePlaced","MethRemovePlacedTable","MethStartTableCook","MoonshineBarrelCreateDatabase","MoonshineBarrelCreatePlaced","MoonshineBarrelGenerate","MoonshineBarrelIsPlaced","MoonshineBarrelRemovePlaced","MoonshineStillCreatePlaced","MoonshineStillFinishCook","MoonshineStillGenerate","MoonshineStillGet","MoonshineStillIsPlaced","MoonshineStillRemovePlaced","MoonshineStillStartCook","StorePlacementData"],
     events: [],
     commands: [],
@@ -682,7 +682,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 49,
-    dbTables: [],
+    dbTables: ['character_parole'],
     exports: ["GetPrisoners","IsJailed","IsReleaseEligible","Reduce","Release","Sentence"],
     events: [],
     commands: [],
@@ -696,7 +696,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 50,
-    dbTables: [],
+    dbTables: ['firearms', 'firearms_flags', 'firearms_projectiles'],
     exports: [],
     events: [],
     commands: [],
@@ -710,7 +710,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 51,
-    dbTables: [],
+    dbTables: ['vehicles'],
     exports: ["CanBeStored","ClassGet","Delete","DonatorPlatesAdd","DonatorPlatesCheck","DonatorPlatesRemove","EngineCheckKeys","EngineForce","EngineOff","EngineOn","EngineToggle","GaragesGet","GaragesGetAll","GaragesImpound","Hack","HackExterior","HasAccess","IsClass","IsClassOrHigher","KeysAdd","KeysAddBySID","KeysHas","KeysRemove","Lockpick","LockpickExterior","OwnedAdd","OwnedAddToCharacter","OwnedAddToFleet","OwnedDelete","OwnedForceSave","OwnedGetActive","OwnedGetAll","OwnedGetAllActive","OwnedGetVIN","OwnedPropertiesGet","OwnedPropertiesGetCount","OwnedPropertiesStore","OwnedSeize","OwnedSpawn","OwnedStore","OwnedTrack","PlateGenerate","PropertiesGet","PropertiesSet","RandomModelAClass","RandomModelBClass","RandomModelCClass","RandomModelDClass","RandomModelSClass","RandomModelXClass","RandomName","RandomNameByMake","RepairEngine","RepairFull","RepairKit","RepairNeedsKit","RepairNormal","RepairPart","SetLocks","SlimJim","SpawnTemp","StopDespawn","StoresCreate","StoresDelete","SyncBikeDrop","SyncBikePickup","SyncDoorsOpen","SyncDoorsShut","SyncEmergencyAirhornGet","SyncEmergencyAirhornSet","SyncEmergencyLightsGet","SyncEmergencyLightsToggle","SyncEmergencySirenCycle","SyncEmergencySirenGet","SyncEmergencySirenToggle","SyncIndicatorsGet","SyncIndicatorsSet","SyncNeonsHas","SyncNeonsIsDisabled","SyncNeonsToggle","toggleDoubleClutchBlock","UtilsIsCloseToFrontOfVehicle","UtilsIsCloseToRearOfVehicle","UtilsIsCloseToVehicle","VINGenerateLocal","VINGenerateOwned"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Core:Server:ForceSave","EmergencyAlerts:Server:DoPredefined","EmergencyAlerts:Server:PursuitModeChange","entityCreating","entityRemoved","explosionEvent","Fitment:Client:Update","gameEventTriggered","Input:Closed","Keybinds:Client:KeyUp:primary_action","ListMenu:Close","onClientResourceStart","onResourceStart","ox_inventory:ready","Polyzone:Enter","Polyzone:Exit","Radar:Server:StolenVehicle","Vehicle:Client:ForceAudio","Vehicle:Client:PickupBike","Vehicle:Server:InspectVIN","Vehicles:Client:Actions:SwitchSeat","Vehicles:Client:Actions:ToggleDoor","Vehicles:Client:Actions:ToggleWindow","Vehicles:Client:AnchorBoat","Vehicles:Client:AttemptSlimJim","Vehicles:Client:BecameDriver","Vehicles:Client:CharacterLogin","Vehicles:Client:CharacterLogout","Vehicles:Client:CleaningKit","Vehicles:Client:DonatorLicensePlateClaim","Vehicles:Client:DonatorLicensePlateClaimConfirm","Vehicles:Client:EnterVehicle","Vehicles:Client:ExitVehicle","Vehicles:Client:FlipVehicle","Vehicles:Client:FlipVehicleRequest","Vehicles:Client:ForceUpdateVehicleDamageState","Vehicles:Client:ForceUpdateVehicleDegenState","Vehicles:Client:GiveKeys","Vehicles:Client:Impound","Vehicles:Client:InspectVIN","Vehicles:Client:K9GetInNearestSeat","Vehicles:Client:K9LeaveVehicle","Vehicles:Client:RecieveCarBombConfig","Vehicles:Client:RecievePersonalPlateInput","Vehicles:Client:RemoveFakePlate","Vehicles:Client:RemoveHarness","Vehicles:Client:RemoveNitrous","Vehicles:Client:Repair:Engine","Vehicles:Client:Repair:Full","Vehicles:Client:Repair:Normal","Vehicles:Client:RequestImpound","Vehicles:Client:RequestTow","Vehicles:Client:SetDespawnStuff","Vehicles:Client:Speeding","Vehicles:Client:StartAnchor","Vehicles:Client:StartUp","Vehicles:Client:Storage:GoBack","Vehicles:Client:Storage:Retrieve","Vehicles:Client:Storage:Select","Vehicles:Client:StoreVehicle","Vehicles:Client:SwitchVehicleSeat","Vehicles:Client:SyncNitroEffect","Vehicles:Client:SyncPurgeEffect","Vehicles:Client:ToggleAnchor","Vehicles:Client:ToggleLocks","Vehicles:Client:Tow","Vehicles:Client:TowReleaseMenu","Vehicles:Client:TowRequestRelease","Vehicles:Client:UpdateKeys","Vehicles:Client:ViewVIN","Vehicles:Server:AddDonatorPlates","Vehicles:Server:DeleteEmergencyBoat","Vehicles:Server:FlipVehicle","Vehicles:Server:GenerateVehicleInfo","Vehicles:Server:HarnessDamage","Vehicles:Server:NitrousUsage","Vehicles:Server:PlayerSetProperties","Vehicles:Server:RemoveBomb","Vehicles:Server:RequestEmergencyBoat","Vehicles:Server:RequestGenerateVehicleInfo","Vehicles:Server:StopDespawn","Vehicles:Server:SyncNitroEffect","Vehicles:Server:SyncPurgeEffect","Vehicles:Server:ToggleAnchor","Vehicles:Tranfers:BeginConfirmation","Vehicles:Transfers:Confirm","Vehicles:Transfers:Deny","VehicleSync:Client:BodyRepair","VehicleSync:Client:Emergency","VehicleSync:Client:EmergencyAirhorn","VehicleSync:Client:OpenDoor","VehicleSync:Client:ShutDoor","VehicleSync:Client:SyncIndicators","VehicleSync:Client:SyncNeons","VehicleSync:Server:BodyRepair","VehicleSync:Server:Emergency","VehicleSync:Server:EmergencyAirhorn","VehicleSync:Server:EngineRepair"],
     commands: ["door","givekeys","seat","slimjim","tebexadddonatorplate","transfer","win"],
@@ -724,7 +724,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 52,
-    dbTables: [],
+    dbTables: ['dealer_data', 'dealer_records', 'dealer_records_buybacks', 'dealer_showrooms', 'dealer_stock'],
     exports: ["DonatorAddPending","DonatorDeletePending","DonatorGetPending","DonatorRemovePending","ManagementGetAllData","ManagementGetData","ManagementLoadData","ManagementSetData","ManagementSetMultipleData","RecordsCreate","RecordsCreateBuyBack","RecordsGet","RecordsGetPage","ShowroomLoad","ShowroomUpdate","ShowroomUpdatePos","StockAdd","StockEnsure","StockFetchAll","StockFetchDealer","StockFetchDealerVehicle","StockHasVehicle","StockIncrease","StockRemove","StockUpdate"],
     events: [],
     commands: [],
@@ -794,7 +794,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 57,
-    dbTables: [],
+    dbTables: ['jobs'],
     exports: ["DataGet","DataSet","DoesExist","DutyGet","DutyGetDutyData","DutyOff","DutyOn","DutyRefreshDutyData","Get","GetAll","GetAllPermissions","GetJobs","GetJobSpawns","GetPermissionsFromJob","GiveJob","HasJob","HasPermission","HasPermissionInJob","IsOwner","IsOwnerOfCompany","ManagementCreate","ManagementDelete","ManagementEdit","ManagementEmployeesGetAll","ManagementEmployeesUpdateAllGrade","ManagementEmployeesUpdateAllJob","ManagementEmployeesUpdateAllWorkplace","ManagementGradesCreate","ManagementGradesDelete","ManagementGradesEdit","ManagementTransfer","ManagementUpgradesHas","ManagementUpgradesLock","ManagementUpgradesReset","ManagementUpgradesUnlock","ManagementWorkplaceEdit","RemoveJob"],
     events: ["Job:Client:DutyChanged","MetalDetector:Client:Sync","onClientResourceStart","onResourceStart","onResourceStop","Polyzone:Enter","Polyzone:Exit"],
     commands: [],
@@ -808,7 +808,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 58,
-    dbTables: [],
+    dbTables: ['bench_schematics', 'character_schematics', 'crafting_cooldowns'],
     exports: ["CancelOffer","CompleteOffer","CreateWorkgroup","DisbandWorkgroup","FailOffer","GetGroups","GetJobs","GetOffers","GetReputations","JailReleased","JailSentenced","JoinWorkgroup","LeaveWorkgroup","ManualFinishOffer","OffDuty","OnDuty","RegisterJob","RequestWorkgroup","SendWorkgroupEvent","StartOffer","TaskOffer","UpdateOffer"],
     events: [],
     commands: [],
@@ -822,7 +822,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 59,
-    dbTables: [],
+    dbTables: ['bench_schematics', 'character_schematics', 'crafting_cooldowns'],
     exports: ["CanAccessVehicleAsMechanic"],
     events: [],
     commands: [],
@@ -836,7 +836,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 60,
-    dbTables: [],
+    dbTables: ['character_parole'],
     exports: ["HardCuff","HardCuffTarget","HaveEvaluated","IsEMSCar","IsInBreach","IsPdCar","RunPlate","SelfToggle","SoftCuff","SoftCuffTarget","ToggleCuffs","Uncuff","UncuffTarget"],
     events: ["Animations:Client:DoPDCallEmote","Characters:Client:Logout","Characters:Client:Spawn","Characters:Server:PlayerLoggedOut","Corrections:Client:OffDuty","Corrections:Client:OnDuty","Damage:Client:Ticks:Heal","EMS:Client:ApplyBandage","EMS:Client:ApplyMorphine","EMS:Client:ApplyTourniquet","EMS:Client:CheckICUPatients","EMS:Client:DismissTreatment","EMS:Client:DrugTest","EMS:Client:Evaluate","EMS:Client:FieldTreatWounds","EMS:Client:OffDuty","EMS:Client:OnDuty","EMS:Client:Stabilize","EMS:Client:Test","EMS:Client:TreatWounds","EMS:Server:CheckICUPatients","EMS:Server:Panic","EMS:Server:RequestHelp","Government:Client:BuyID","Government:Client:BuyLicense","Government:Client:DOJShop","Government:Client:DoLicenseBuy","Government:Client:DoWeaponsLicenseBuyPolice","Government:Client:Gavel","Government:Client:OffDuty","Government:Client:OnDuty","Government:Client:UseGavel","Government:Server:Gavel","Handcuffs:Client:CuffingAnim","Handcuffs:Client:CuffThread","Handcuffs:Client:DoCuffBreak","Handcuffs:Client:DoShittyAnim","Handcuffs:Client:FailCuffBreak","Handcuffs:Client:HardCuff","Handcuffs:Client:SoftCuff","Handcuffs:Client:Uncuff","Handcuffs:Client:UncuffingAnim","Handcuffs:Server:HardCuff","Handcuffs:Server:SoftCuff","Handcuffs:Server:Uncuff","Hospital:Client:GetOut","Job:Client:DutyChanged","Keybinds:Client:KeyDown:cancel_action","onClientResourceStart","onResourceStart","ox_inventory:ready","Police:Client:AddDeployedSpike","Police:Client:BAC","Police:Client:Breached","Police:Client:DNASwab","Police:Client:DoApartmentBreach","Police:Client:GetRadioChannel","Police:Client:GetTackled","Police:Client:GSR","Police:Client:OffDuty","Police:Client:OnDuty","Police:Client:OpenLocker","Police:Client:ReEnableTracker","Police:Client:RemoveMask","Police:Client:RemoveSpikes","Police:Client:RunPlate","Police:Client:Search","Police:Client:SpikeyBois","Police:Server:Cuff","Police:Server:Panic","Police:Server:RemoveSpikes","Police:Server:RunPlate","Police:Server:Slimjim","Police:Server:Tackle","Police:Server:ToggleCuff","Police:Server:Uncuff","Polyzone:Enter","Polyzone:Exit","Prison:Client:JailAlarm","Prison:Client:SetCellState","Prison:Client:SetLockdown","Prison:Server:Lockdown:AlertPolice","Test:Animation","Vehicles:Server:RequestGenerateVehicleInfo"],
     commands: ["311","311a","311r","911","911a","911r"],
@@ -864,7 +864,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/dist/index.html',
     uiBundler: 'webpack',
     ensureOrder: 62,
-    dbTables: [],
+    dbTables: ['mdt_charges', 'mdt_library', 'mdt_notices', 'mdt_reports', 'mdt_reports_evidence', 'mdt_reports_people', 'mdt_warrants', 'character_parole'],
     exports: ["BadgesClose","BadgesOpen","Close","DataAdd","DataRemove","DataReset","DataSet","DataUpdate","EmergencyAlertsClose","EmergencyAlertsCreate","EmergencyAlertsCreateClientAlert","EmergencyAlertsCreateIfReported","EmergencyAlertsDisableTracker","EmergencyAlertsGetUnitData","EmergencyAlertsOffDuty","EmergencyAlertsOnDuty","EmergencyAlertsOpen","EmergencyAlertsRefreshCallsign","EmergencyAlertsSendMemberUpdates","EmergencyAlertsSendOnDutyEvent","FirearmFlagsAdd","FirearmFlagsRemove","FirearmRegister","FirearmSearch","FirearmView","LibraryCreate","LibraryDelete","LicensesClose","LicensesOpen","MiscCreateBOLO","MiscCreateCharge","MiscCreateNotice","MiscDeleteBOLO","MiscDeleteCharge","MiscDeleteNotice","MiscUpdateCharge","MiscViewNotice","Open","PeopleSearchPeople","PeopleUpdate","PeopleView","ReportsCreate","ReportsDelete","ReportsSearch","ReportsSearchEvidence","ReportsUpdate","ReportsView","VehiclesFlagsAdd","VehiclesFlagsRemove","VehiclesGetStrikes","VehiclesSearch","VehiclesUpdateStrikes","VehiclesView","WarrantsCreate","WarrantsSearch","WarrantsUpdate","WarrantsView"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Characters:Client:Updated","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","EmergencyAlerts:Client:Clear","EmergencyAlerts:Client:Close","EmergencyAlerts:Client:Connect","EmergencyAlerts:Client:Disconnect","EmergencyAlerts:Client:Open","EmergencyAlerts:Client:PursuitModeChange","EmergencyAlerts:Client:RadioChannelChange","EmergencyAlerts:Client:TrackerBlip","EmergencyAlerts:Client:UpdateMember","EmergencyAlerts:Client:UpdateMembers","EmergencyAlerts:Client:UpdateTrackers","EmergencyAlerts:Server:DoPredefined","EmergencyAlerts:Server:ServerDoPredefined","Government:Client:AccessPublicRecords","Job:Client:DutyChanged","Job:Server:DutyAdd","Job:Server:DutyRemove","Jobs:Server:JobUpdate","Jobs:Server:UpdatedCache","MDT:Client:AddData","MDT:Client:Close","MDT:Client:DisableTracker","MDT:Client:Login","MDT:Client:Logout","MDT:Client:Open","MDT:Client:RemoveData","MDT:Client:ResetData","MDT:Client:SetData","MDT:Client:SetMultipleData","MDT:Client:ShowBadge","MDT:Client:ShowLicense","MDT:Client:Toggle","MDT:Client:ToggleBodyCam","MDT:Client:UpdateData","MDT:Client:UpdateJobData","MDT:Server:CloseMDT","MDT:Server:OpenDOCPublic","MDT:Server:OpenPublicRecords","MDT:Server:RegisterCallbacks","onClientResourceStart","onResourceStart","ox_inventory:ready","Ped:Client:Died","UI:Client:Reset"],
     commands: ["clearblips","mdt"],
@@ -920,7 +920,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 66,
-    dbTables: [],
+    dbTables: ['billboards'],
     exports: ["Get","GetCategory","Set"],
     events: [],
     commands: [],
@@ -934,7 +934,7 @@ export const resources: Resource[] = [
     
     uiBundler: 'none',
     ensureOrder: 67,
-    dbTables: [],
+    dbTables: ['casino_bigwins', 'casino_config', 'casino_statistics'],
     exports: ["ChipsGet","ChipsHas","ChipsModify","ConfigGet","ConfigSet"],
     events: [],
     commands: [],
@@ -1004,7 +1004,7 @@ export const resources: Resource[] = [
     uiPath: 'ui/dist/index.html',
     uiBundler: 'webpack',
     ensureOrder: 72,
-    dbTables: ["characters"],
+    dbTables: ['app_profile_history', 'character_app_profiles', 'character_calls', 'character_chatter_groups', 'character_contacts', 'character_documents', 'character_documents_shared', 'character_emails', 'character_messages', 'character_photos', 'chatter_groups', 'chatter_messages'],
     exports: ["AdvertsCreate","AdvertsDelete","AdvertsUpdate","CallAccept","CallCreate","CallCreateRecord","CallDecrypt","CallEnd","CallRead","CallReceive","CallStatus","Close","CoManagerFetchAllAccessibleRosters","CoManagerFetchTimeWorked","ContactsIsContact","DataAdd","DataRemove","DataReset","DataSet","DataUpdate","DocumentsCreate","DocumentsDelete","DocumentsEdit","EmailDelete","EmailRead","EmailSend","GeneratePhoneNumber","IsAppUsable","IsOpen","MessagesDelete","MessagesRead","NotificationAdd","NotificationAddWithId","NotificationRemove","NotificationRemoveById","NotificationReset","NotificationUpdate","Open","OpenLimited","OpenPayphone","PermissionsHasPermission","PermissionsLoad","PhotosCreate","PhotosDelete","PhotosFetch","ReceiveShare","ResetRoute","SetExpanded","StoreInstallCheck","StoreInstallDo","StoreUninstallCheck","StoreUninstallDo","TogglePhone","TwitterGet","TwitterPost","UpdateJobData"],
     events: ["Characters:Client:Logout","Characters:Client:Spawn","Characters:Client:Updated","Characters:Server:PlayerDropped","Characters:Server:PlayerLoggedOut","Crypto:Server:Startup","Hospital:Client:ICU:Sent","Jail:Client:Jailed","Job:Client:DutyChanged","onClientResourceStart","onResourceStart","ox_inventory:ready","Ped:Client:Died","Phone:Blueline:FinishRace","Phone:Blueline:NotifyDNF","Phone:Blueline:NotifyDNFStart","Phone:Client:AcceptBizCall","Phone:Client:AddData","Phone:Client:Biz:Answered","Phone:Client:Biz:End","Phone:Client:Biz:Recieve","Phone:Client:Blueline:CancelRace","Phone:Client:Blueline:CreateRace","Phone:Client:Blueline:FinishRace","Phone:Client:Blueline:JoinRace","Phone:Client:Blueline:LeaveRace","Phone:Client:Blueline:Spawn","Phone:Client:Blueline:StartRace","Phone:Client:Blueline:StoreSingleTrack","Phone:Client:Blueline:StoreTracks","Phone:Client:Chatter:GroupDeleted","Phone:Client:Chatter:Notify","Phone:Client:Chatter:ReceiveInvite","Phone:Client:Chatter:SetGroups","Phone:Client:Chatter:SetInvites","Phone:Client:Chatter:UpdateGroup","Phone:Client:Close","Phone:Client:CoManager:AcceptHire","Phone:Client:CoManager:AcceptXfer","Phone:Client:CoManager:DeclineHire","Phone:Client:CoManager:DeclineXfer","Phone:Client:CoManager:GetJobOffer","Phone:Client:CoManager:GetOfferResult","Phone:Client:CoManager:GetTransferRequest","Phone:Client:DeclineBizCall","Phone:Client:Documents:Deleted","Phone:Client:Documents:ReceivedSignature","Phone:Client:Documents:SigReqReceived","Phone:Client:Email:Delete","Phone:Client:Email:Receive","Phone:Client:Labor:NotifyEnd","Phone:Client:MakeBizCall","Phone:Client:MakeBizCallConfirm","Phone:Client:Messages:Notify","Phone:Client:Messages:SetThreads","Phone:Client:MuteBiz","Phone:Client:Notifications:Add","Phone:Client:Notifications:AddWithId","Phone:Client:Notifications:Remove","Phone:Client:Notifications:Update","Phone:Client:OpenLimited","Phone:Client:Payphone","Phone:Client:Phone:AcceptBizCall","Phone:Client:Phone:AcceptCall","Phone:Client:Phone:EndCall","Phone:Client:Phone:RecieveCall","Phone:Client:PingEm:AcceptPing","Phone:Client:PingEm:RejectPing","Phone:Client:ReceiveShare","Phone:Client:Redline:CancelRace","Phone:Client:Redline:CreateRace","Phone:Client:Redline:FinishRace","Phone:Client:Redline:JoinRace","Phone:Client:Redline:LeaveRace","Phone:Client:Redline:ReceiveInvite","Phone:Client:Redline:RemovedFromRace","Phone:Client:Redline:Spawn","Phone:Client:Redline:StartRace","Phone:Client:Redline:StoreSingleTrack","Phone:Client:Redline:StoreTracks","Phone:Client:RemoveData","Phone:Client:RemovePhone","Phone:Client:ResetData","Phone:Client:RestorePosition","Phone:Client:SetApps","Phone:Client:SetData","Phone:Client:SetDataMulti","Phone:Client:Twitter:ClearTweets","Phone:Client:Twitter:Notify","Phone:Client:Twitter:RemoveAccount","Phone:Client:UpdateData","Phone:Nui:Bank:AcceptBill","Phone:Nui:Bank:DenyBill","Phone:Nui:Phone:AcceptCall","Phone:Nui:Phone:EndCall","Phone:Redline:FinishRace","Phone:Redline:NotifyDNF","Phone:Redline:NotifyDNFStart","Phone:Server:AliasUpdated","Phone:Server:ForceEndBizCall"],
     commands: ["resetphonepos"],
@@ -1128,7 +1128,7 @@ export const resourceCategories: { id: ResourceCategory; label: string }[] = [
 ]
 
 export function getResource(name: string): Resource | undefined {
-  return resources.find((r) => r.name === name)
+  return resources.find((r) => r.name === name) // exact name match
 }
 
 export function getResourcesByCategory(category: ResourceCategory): Resource[] {

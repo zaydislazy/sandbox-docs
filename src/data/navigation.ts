@@ -1,16 +1,17 @@
 import type { NavGroup, NavItem } from '../types/docs'
 
+// sidebar order = reading order, roughly
 export const navGroups: NavGroup[] = [
   {
     title: 'Getting Started',
     items: [
-      { title: 'Introduction', href: '/', description: 'What Sandbox is and how it relates to Mythic' },
+      { title: 'Introduction', href: '/', description: 'What Sandbox is' },
       {
         title: 'Setup Guide',
         href: '/setup',
         description: 'Quick start, install, and configuration in one place',
       },
-      { title: 'Differences from Mythic', href: '/differences', description: 'What changed from Mythic Framework' },
+      { title: 'Coming from older forks', href: '/differences', description: 'Exports, MariaDB, and legacy leftovers' },
     ],
   },
   {
@@ -47,7 +48,8 @@ export const navGroups: NavGroup[] = [
       { title: 'Admin & Permissions', href: '/admin', description: 'Roles, /admin, security warnings' },
       { title: 'Troubleshooting & FAQ', href: '/troubleshooting', description: 'Common failures and fixes' },
       { title: 'Changelog', href: '/changelog', description: 'What changed on these docs' },
-      { title: 'Credits', href: '/credits', description: 'AutLaaw, BadCodes, Mythic authors' },
+      { title: 'Credits', href: '/credits', description: 'AutLaaw, BadCodes, and original authors' },
+      { title: 'Contributing', href: '/contribute', description: 'Help improve these docs' },
     ],
   },
 ]

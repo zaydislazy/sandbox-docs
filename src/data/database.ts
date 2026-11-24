@@ -250,6 +250,10 @@ export const dbTables: DbTable[] = [
     purpose: 'Door lock definitions for ox_doorlock.',
   },
   {
+    name: 'ox_inventory',
+    purpose: 'Player/stash item storage. Created by ox_inventory at runtime (not in database.sql).',
+  },
+  {
     name: 'peds',
     purpose: 'Table \`peds\` from database.sql.',
   },

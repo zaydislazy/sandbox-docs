@@ -38,10 +38,10 @@ export function BestPractices() {
           Call exports before the owning resource has started (gate with ensure order or waits)
         </li>
         <li>
-          Assume Mythic MongoDB / Redux / MUI docs apply
+          Assume MongoDB / Redux / MUI patterns from older forks
         </li>
         <li>
-          Put this <code>docs/</code> site into <code>resources.cfg</code>
+          Put this docs site into <code>resources.cfg</code>
         </li>
         <li>
           Commit real Discord webhooks or CFX keys into cfg files

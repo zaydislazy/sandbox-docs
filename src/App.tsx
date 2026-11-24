@@ -6,6 +6,7 @@ import { Architecture } from './pages/Architecture'
 import { ArchitectureExports } from './pages/ArchitectureExports'
 import { ArchitectureNui } from './pages/ArchitectureNui'
 import { Changelog } from './pages/Changelog'
+import { Contribute } from './pages/Contribute'
 import { Credits } from './pages/Credits'
 import { DatabasePage } from './pages/DatabasePage'
 import { Differences } from './pages/Differences'
@@ -22,6 +23,7 @@ import { ResourcesIndex } from './pages/ResourcesIndex'
 import { SetupGuide } from './pages/SetupGuide'
 import { Troubleshooting } from './pages/Troubleshooting'
 
+// exports catalog is huge, keep it off the critical path
 const ExportsPage = lazy(async () => {
   const mod = await import('./pages/ExportsPage')
   return { default: mod.ExportsPage }
@@ -67,6 +69,7 @@ export default function App() {
           <Route path="troubleshooting" element={<Troubleshooting />} />
           <Route path="changelog" element={<Changelog />} />
           <Route path="credits" element={<Credits />} />
+          <Route path="contribute" element={<Contribute />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

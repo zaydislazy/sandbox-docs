@@ -1,6 +1,6 @@
 import type { EventDef } from '../types/docs'
 
-/** High-value lifecycle events and callback patterns verified from sandbox-base / characters. */
+// curated lifecycle stuff — not every TriggerEvent in the tree
 export const eventsCatalog: EventDef[] = [
   {
     id: 'core-shared-watermark',
@@ -106,7 +106,7 @@ export const eventsCatalog: EventDef[] = [
     resource: 'sandbox-base',
     kind: 'local',
     description:
-      'Legacy Mythic-era event name. Client triggers it; some server task/cron listeners still wait on it. Confirm whether TaskTick/CronTick actually start in production.',
+      'Legacy event name. Client triggers it; some server task/cron listeners still wait on it. Confirm whether TaskTick/CronTick actually start in production.',
   },
   {
     id: 'playerdropped',

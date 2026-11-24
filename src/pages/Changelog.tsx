@@ -9,29 +9,35 @@ type Change = {
 
 const changes: Change[] = [
   {
+    date: '2026-11-24',
+    title: 'Public repo prep',
+    items: [
+      'Linked resources to their database tables (MDT, finance, phone, properties, etc.).',
+      'Documented ox_inventory runtime table.',
+      'Removed unofficial-docs banners; toned down older-fork comparisons.',
+      'Added Contributing page, README.md, and CONTRIBUTING.md.',
+    ],
+  },
+  {
     date: '2026-11-19',
     title: 'Developer data + Operations pages',
     items: [
-      'Expanded Getting Important Data with local character usage, GetData key catalog, nested Licenses/Jobs/custody/phone options, SetData rules, finance, reputation, and callbacks.',
-      'Added Changelog under Operations summarizing docs site updates.',
-      'Added Credits under Operations for AutLaaw, BadCodes, and Mythic Framework authors.',
+      'Expanded Getting Important Data with local character usage, GetData keys, nested options, finance, and callbacks.',
+      'Added Changelog and Credits under Operations.',
     ],
   },
   {
     date: '2026-11-18',
     title: 'Cleanup pass',
-    items: [
-      'Removed todoVerify flags and TODO: verify badges/copy across data files, types, and UI.',
-    ],
+    items: ['Removed todoVerify flags and TODO badges across the site.'],
   },
   {
     date: '2026-11-18',
     title: 'Docs site bootstrap',
     items: [
-      'Initial standalone Vite + React documentation site for Sandbox RP Framework.',
-      'Getting Started, Architecture, Developer Guide, Reference, and Operations navigation.',
-      'Resource / exports / events / database catalogs generated from the Sandbox workspace.',
-      'Setup guide, Mythic differences, admin permissions, and troubleshooting pages.',
+      'Initial Vite + React documentation site.',
+      'Getting Started, Architecture, Developer Guide, Reference, and Operations sections.',
+      'Resource / exports / events / database catalogs.',
     ],
   },
 ]
@@ -44,8 +50,8 @@ export function Changelog() {
       href="/changelog"
     >
       <p>
-        Entries below track this documentation site. Framework / resource changes belong in the Sandbox repo and
-        in-game <code>changelogs</code> table.
+        These entries are for the docs site. Framework changes live in the Sandbox repo / in-game{' '}
+        <code>changelogs</code> table.
       </p>
 
       {changes.map((entry) => {

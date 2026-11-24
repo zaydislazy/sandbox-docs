@@ -10,12 +10,6 @@ export function Troubleshooting() {
       href="/troubleshooting"
     >
       <h2 id="faq">FAQ</h2>
-      <h3 id="is-this-mythic">Is this Mythic Framework?</h3>
-      <p>
-        It is a heavily modified fork. Read <Link to="/differences">Differences from Mythic</Link> before following
-        Mythic&apos;s public docs.
-      </p>
-
       <h3 id="where-database-cfg">Where is database.cfg?</h3>
       <p>
         Use <code>server/config/database.ptr.cfg</code> or <code>database.prod.cfg</code>. The README shorthand does
@@ -36,7 +30,10 @@ export function Troubleshooting() {
       </p>
 
       <h3 id="components">Where did FetchComponent go?</h3>
-      <p>Removed. Use native exports on the owning resource name.</p>
+      <p>
+        Gone. Call exports on the owning resource instead, e.g.{' '}
+        <code>exports[&apos;sandbox-characters&apos;]:FetchCharacterSource(source)</code>.
+      </p>
 
       <h2 id="common-errors">Common errors</h2>
       <ul>

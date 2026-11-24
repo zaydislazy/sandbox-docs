@@ -38,8 +38,9 @@ MySQL.insert.await('INSERT INTO logs (message) VALUES (?)', { msg })`}
 
       <h2 id="inventory">Inventory tables</h2>
       <p>
-        ox_inventory manages its own tables outside the annotated list in <code>database.sql</code> in some
-        deployments. Confirm inventory table ownership for your imported dump.
+        <code>ox_inventory</code> creates its own <code>ox_inventory</code> table at runtime — it is not in the
+        shipped <code>database.sql</code>. See the <Link to="/resources/ox_inventory">ox_inventory</Link> resource
+        page.
       </p>
     </DocPage>
   )

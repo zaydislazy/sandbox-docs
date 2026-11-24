@@ -60,13 +60,14 @@ export const searchIndex: SearchEntry[] = [
     ]
   },
   {
-    "title": "Differences from Mythic",
+    "title": "Coming from older forks",
     "href": "/differences",
-    "description": "Mythic vs Sandbox",
+    "description": "Exports, MariaDB, legacy leftovers",
     "keywords": [
       "differences",
-      "from",
-      "mythic"
+      "migration",
+      "legacy",
+      "fork"
     ]
   },
   {
@@ -228,14 +229,25 @@ export const searchIndex: SearchEntry[] = [
   {
     "title": "Credits",
     "href": "/credits",
-    "description": "AutLaaw, BadCodes, Mythic authors",
+    "description": "AutLaaw, BadCodes, and original authors",
     "keywords": [
       "credits",
       "autlaaw",
       "badcodes",
       "alzar",
-      "mythic",
       "authors"
+    ]
+  },
+  {
+    "title": "Contributing",
+    "href": "/contribute",
+    "description": "Help improve these docs",
+    "keywords": [
+      "contribute",
+      "contributing",
+      "pr",
+      "github",
+      "docs"
     ]
   },
   {

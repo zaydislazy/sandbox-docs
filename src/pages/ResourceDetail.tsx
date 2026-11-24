@@ -12,6 +12,7 @@ export function ResourceDetail() {
 
   const exportNames = resource.exports
   const events = getEventsForResource(resource.name)
+  // prev/next within the resources list, not the whole sidebar
   const index = resources.findIndex((r) => r.name === resource.name)
   const prevRes = index > 0 ? resources[index - 1] : null
   const nextRes = index < resources.length - 1 ? resources[index + 1] : null
@@ -50,16 +51,27 @@ export function ResourceDetail() {
 
       <h2 id="database">Database tables</h2>
       {resource.dbTables.length === 0 ? (
-        <p>No tables annotated for this resource.</p>
+        <p>
+          No tables linked for this resource. Browse the full schema on the{' '}
+          <Link to="/database">Database</Link> page.
+        </p>
       ) : (
         <ul>
           {resource.dbTables.map((table) => (
             <li key={table}>
-              <Link to="/database">{table}</Link>
+              <Link to="/database">
+                <code>{table}</code>
+              </Link>
             </li>
           ))}
         </ul>
       )}
+      {resource.name === 'ox_inventory' ? (
+        <p className="text-sm text-ink-faint">
+          ox_inventory creates/migrates its own <code>ox_inventory</code> table at runtime — it is not part of the
+          shipped <code>database.sql</code> dump.
+        </p>
+      ) : null}
 
       <h2 id="commands">Commands</h2>
       {resource.commands.length === 0 ? (

@@ -14,6 +14,7 @@ export function SearchDialog({ open, onClose }: SearchDialogProps) {
   const inputRef = useRef<HTMLInputElement>(null)
   const navigate = useNavigate()
 
+  // dumb substring match is fine for this index size
   const results = useMemo(() => {
     const q = query.trim().toLowerCase()
     if (!q) return searchIndex.slice(0, 12)

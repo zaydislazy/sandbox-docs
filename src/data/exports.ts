@@ -1,6 +1,6 @@
 import type { ExportDef } from '../types/docs'
 
-/** Merged from _docs_extract/exports-core.json + exports-rest.json, with curated core API docs. */
+// generated catalog + a few hand-written core entries mixed in
 export const exportsCatalog: ExportDef[] = [
   {
     id: 'ox-doorlock-editdoor',
